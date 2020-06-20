@@ -108,27 +108,19 @@ p {
 }
 
 .about-container {
+    width: calc(200vw - 30%);
+    height: calc(100vh - 180px);
+    padding-top: 120px;
     display: flex;
-    justify-content: center;
-    width: calc(200vw - 60%);
-    height: 100vh;
-    overflow: hidden;
 }
 
 .about-col-1 {
     width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .about-col-2 {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-left: 5%;
 }
 
 .about-col-2__row-1 {
@@ -136,6 +128,11 @@ p {
 }
 
 .about-col-2__row-1__item {
+    padding-right: 10%;
+}
+
+.about-col-2__row-1__item:first-child {
+    padding-left: 0px;
 }
 
 .about-col-2__row-2 {
