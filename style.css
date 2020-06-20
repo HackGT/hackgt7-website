@@ -8,14 +8,6 @@
 @import "./src/styles/est-footer.css";
 
 :root {
-    /*
-    --color-1: #0c1126;
-    --color-2: #124064;
-    --color-3: #2d85ca; 
-    --color-4: #44ab9b;  
-    --color-5: #f2d157; 
-    */
-
     /* re-export colors for better semantics */
     --primary-color-1: black;
     --primary-color-2: black;
@@ -31,8 +23,8 @@
     --secondary-font: Roboto, sans-serif;
     
     /* gutters */
-    --content-padding: 0px 0px; 
-    --content-margin: 0px 0px;
+    --content-padding: var(--nav-height) 0px; 
+    --content-margin: 0px 15%;
 
     /* nav */
     /* this variable is here and not in nav-bar.css because .content needs to use it */
@@ -59,29 +51,59 @@ p {
     line-height: 1.75rem;
 }
 
-.content {
-    position: relative;
-    top: var(--nav-height);
+/* TODO remove this */
+.temp-illo {
+    background: grey;
+    height: 75%;
 }
 
-.splash-container {}
+.splash-container {
+    display: flex;
+    height: calc(100vh - 120px);
+}
 
-.splash {}
+.splash__item {
+    width: 50%;
+}
 
-.splash__illo {}
+.splash__illo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-.splash__main {}
+.splash__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.splash__main__item {}
+.splash__main__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
 
-.splash__main__item > div {}
+.splash__main__item > div {
+    padding: 10px;
+    text-align: center;
+    width: 100%; 
+}
 
 .title {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .quote {
+    font-size: 2.5rem;
+}
+
+.date {
     font-size: 1.5rem;
 }
 
@@ -120,11 +142,33 @@ p {
 
 }
 
-@media (min-width: 321px) {}
+@media (min-width: 901px) {}
 
-@media (max-width: 320px) {
+@media (max-width: 900px) {
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+
     .splash-container {
         flex-direction: column;
-        height: 100vh;
-    }   
+        justify-content: space-around;
+    }
+
+    .splash__item {
+        height: 50%;
+        width: 100%;
+    }
+
+    .splash__main__item {
+        height: 50%;
+    }
 }
+
