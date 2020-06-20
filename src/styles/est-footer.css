@@ -1,6 +1,6 @@
 est-footer {
-  --footer-bg: var(--accent-color-2);
-  --footer-color: var(--primary-color-2);
+  --footer-bg: white;
+  --footer-color: black;
   --footer-gh-issue-font-size: 0.75rem;
 }
 

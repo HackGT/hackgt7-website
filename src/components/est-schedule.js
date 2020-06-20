@@ -91,6 +91,8 @@ class EstSchedule extends HTMLElement {
 
     this.appendChild(btnContainer);
 
+    const outerContainer = document.createElement('div');
+    outerContainer.classList.add('est-schedule__events-container');
     for (const [day, events] of this.daily.entries()) {
       // add events
       const eventsContainer = document.createElement('div');
@@ -113,8 +115,10 @@ class EstSchedule extends HTMLElement {
         eventsContainer.appendChild(eventDiv);
       }
 
-      this.appendChild(eventsContainer);
+      outerContainer.appendChild(eventsContainer);
     }
+
+    this.appendChild(outerContainer);
 
     const firstDay = this.daily.keys().next().value;
     this.current = {

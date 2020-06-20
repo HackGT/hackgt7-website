@@ -15,7 +15,13 @@ template.innerHTML = `<style>
     </div>
 </div>`;
 
+/**
+ * TODO
+ */
 class EstScrolljack extends HTMLElement {
+  /**
+   * @constructor
+   */
   constructor() {
     super();
 
@@ -26,7 +32,7 @@ class EstScrolljack extends HTMLElement {
     const el = template.content.cloneNode(true);
     el.querySelector('.scrolljack__container--outer').style.height = this.getAttribute('for');
     if (this.hasAttribute('offset')) {
-      el.querySelector('.scrolljack__container--inner').style.top= this.getAttribute('offset');
+      el.querySelector('.scrolljack__container--inner').style.top = this.getAttribute('offset');
     }
     this.attachShadow({mode: 'open'});
     this.shadowRoot.appendChild(el);

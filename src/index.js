@@ -13,7 +13,9 @@ import './components/est-register-btn.js';
 import lax from 'lax.js';
 
 window.onload = function() {
-  lax.setup(); // init
+  lax.setup({
+    breakpoints: {large: 900},
+  });
 
   const updateLax = () => {
     lax.update(window.scrollY);

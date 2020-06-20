@@ -10,26 +10,21 @@ est-schedule {
 
 .est-schedule__days {
     width: var(--est-schedule-width);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
     margin-bottom: 20px;
-}
-
-.est-schedule__days button:first-child {
-    margin-left: 0px;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% / 7 - 1rem), 1fr));
 }
 
 .est-schedule__days__btn {
     background: var(--color-2);
-    color: white;
+    color: var(--muted);
     padding: 10px;
     border-radius: 20px;
     font-weight: 700;
     font-size: 1rem;
     border: 3px solid black;
     cursor: pointer;
-    margin-left: 40px;
 }
 
 .est-schedule__days__btn--active  {
@@ -38,8 +33,13 @@ est-schedule {
     box-shadow: 0 0 0 5px var(--color-5);
 }
 
-.est-schedule__events {
+.est-schedule__events-container {
+    min-height: 50vh;
     width: var(--est-schedule-width);
+    padding: 20px;
+}
+
+.est-schedule__events {
     display: grid;
     grid-template-columns: 0.25fr 1fr;
     z-index: 900;

@@ -11,9 +11,33 @@
 }
 
 .est-faq__container__item--question {
+    background: grey;
     font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
 }
 
 .est-faq__container__item--answer {
-
+    overflow: hidden;
+    max-height: 0px;
+    padding: 0 20px;
+    transition: max-height 0.2s ease-in;
+    background: lightgrey;
 }
+
+.est-faq__container__item--question::after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.est-faq__container__item--question:hover, .est-faq__container__item--question--active {
+    background: lightgrey;
+}
+
+.est-faq__container__item--question--active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+

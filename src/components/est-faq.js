@@ -53,8 +53,20 @@ class EstFaq extends HTMLElement {
       question.classList.add('est-faq__container__item');
       question.classList.add('est-faq__container__item--question');
 
+      question.addEventListener('click', () => {
+        question.classList.toggle('est-faq__container__item--question--active');
+        const answer = question.nextElementSibling;
+        if (answer.style.maxHeight) {
+          answer.style.maxHeight = null;
+        } else {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+
       const answer = document.createElement('div');
-      answer.innerHTML = faq.answer;
+      const answerText = document.createElement('p');
+      answerText.innerHTML = faq.answer;
+      answer.appendChild(answerText);
       answer.classList.add('est-faq__container__item');
       answer.classList.add('est-faq__container__item--answer');
 

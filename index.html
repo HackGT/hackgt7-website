@@ -31,10 +31,10 @@
             </est-section>
 
             <est-section name="about">
-                <est-scrolljack for="200vw" id="parent">
+                <est-scrolljack for="200vw" breakpoint="900" id="parent">
                     <div 
                         class="lax about-container"
-                        data-lax-translate-x="(-0.5*vw) 0, (-1*vw) (-1.1*vw)" 
+                        data-lax-translate-x_large="0 0, (-1.5*vw) (-0.93*vw)" 
                         data-lax-anchor="#parent"
                         >
                         <div class="about-col-1">
@@ -55,32 +55,71 @@
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse pharetra cursus tempus mattis. Vel mattis iaculis porta morbi fames duis quam in. Tellus consequat, molestie aliquet in. Sapien pellentesque mi consectetur nisl maecenas suscipit nisi sit molestie.
                                     </p>
                                 </div>
-                                <div class="about-col-2__row-2__item">
+                                <div class="about-col-2__row-1__item">
                                     <h1>(about the event)</h1>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse pharetra cursus tempus mattis. Vel mattis iaculis porta morbi fames duis quam in. Tellus consequat, molestie aliquet in. Sapien pellentesque mi consectetur nisl maecenas suscipit nisi sit molestie.
                                     </p>
                                 </div>
                             </div>
-                            <div>
+                            <div style="height: 20%; background: grey;">
                                 <div>placeholder</div>
                             </div>
                         </div>
                     </div>
                 </est-scrolljack>
             </est-section>
-
+    
             <est-section name="tracks">
+                <est-scrolljack for="200vh" id="exp">
+                    <div class="full-container new-experience-container">
+                        <div 
+                            class="lax title new-experience"
+                            data-lax-scale="0 0, (-0.5*vh) 1"
+                            data-lax-anchor="#exp"
+                            >
+                            Welcome to a new experience
+                        </div>
+                    </div>
+                </est-scrolljack>
+                <div class="full-container">
+                    <div class="title">hacker tracks</div>
+                    <div class="center-row">
+                        <div>
+                            <div class="temp-illo"></div>
+                            <h1>general</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                        <div>
+                            <div class="temp-illo"></div>
+                            <h1>general</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
             </est-section>
 
             <est-section name="schedule">
+                <div class="title">schedule</div>
+                <div>
+                    <est-schedule></est-schedule>
+                </div>
             </est-section>
 
             <est-section name="faqs">
+                <div class="title">faqs</div>
+                <est-faq></est-faq>
             </est-section>
 
             <est-section name="sponsors">
             </est-section>
+
+            <est-footer></est-footer>
         </div>
 
 

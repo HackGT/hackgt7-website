@@ -125,18 +125,46 @@ p {
 
 .about-col-2__row-1 {
     display: flex;
+    height: 80%;
 }
 
 .about-col-2__row-1__item {
     padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-col-2__row-1__item:first-child {
     padding-left: 0px;
+    padding-right: 15%;
 }
 
 .about-col-2__row-2 {
 
+}
+
+.full-container {
+    height: 100vh;
+}
+
+.new-experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-experience {
+    text-align: center;
+}
+
+/* i'm bad at names ;( */
+.center-row {
+    display: flex;
+}
+
+.center-row > div {
+    flex-grow: 1;
 }
 
 @media (min-width: 901px) {}

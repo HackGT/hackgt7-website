@@ -12,11 +12,11 @@ template.innerHTML = `
     <div class="est-footer">
         <div class="est-footer__item est-footer__item--social"></div>
         <div class="est-footer__item est-footer__item--extra">
-            Made with love by HackGT
+            Made with &#9829; by HackGT
         </div>
     </div>
     <div class="est-footer__gh-issue">
-      Found a bug?
+      <span style="padding-right: 5px;">Found a bug?</span>
       <a href="${config.repo}/issues/new" target="_blank">File an issue!</a>
     </div>
 </footer>
