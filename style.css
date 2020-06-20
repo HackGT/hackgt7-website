@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+@import "./src/styles/est-nav.css";
+@import "./src/styles/est-register-btn.css";
+@import "./src/styles/est-schedule.css";
+@import "./src/styles/est-select.css";
+@import "./src/styles/est-faq.css";
+@import "./src/styles/est-footer.css";
+
+:root {
+    /*
+    --color-1: #0c1126;
+    --color-2: #124064;
+    --color-3: #2d85ca; 
+    --color-4: #44ab9b;  
+    --color-5: #f2d157; 
+    */
+
+    /* re-export colors for better semantics */
+    --primary-color-1: black;
+    --primary-color-2: black;
+    --secondary-color-1: var(--color-2);
+    --secondary-color-2: var(--color-3);
+    --accent-color-1: var(--color-4);
+    --accent-color-2: var(--color-5);
+    --background-color: var(--color-1);
+    --muted-color: black;
+
+    /* fonts */
+    --primary-font: Inter, sans-serif;
+    --secondary-font: Roboto, sans-serif;
+    
+    /* gutters */
+    --content-padding: 0px 0px; 
+    --content-margin: 0px 0px;
+
+    /* nav */
+    /* this variable is here and not in nav-bar.css because .content needs to use it */
+    --nav-height: 60px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    background: var(--background-color);
+    font-family: var(--secondary-font);
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    margin: 0px;
+}
+
+p {
+    line-height: 1.75rem;
+}
+
+.content {
+    position: relative;
+    top: var(--nav-height);
+}
+
+.splash-container {}
+
+.splash {}
+
+.splash__illo {}
+
+.splash__main {}
+
+.splash__main__item {}
+
+.splash__main__item > div {}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.quote {
+    font-size: 1.5rem;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    width: calc(200vw - 60%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about-col-1 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-col-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-col-2__row-1 {
+    display: flex;
+}
+
+.about-col-2__row-1__item {
+}
+
+.about-col-2__row-2 {
+
+}
+
+@media (min-width: 321px) {}
+
+@media (max-width: 320px) {
+    .splash-container {
+        flex-direction: column;
+        height: 100vh;
+    }   
+}
