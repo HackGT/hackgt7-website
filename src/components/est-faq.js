@@ -26,7 +26,9 @@ class EstFaq extends HTMLElement {
     super();
 
     fetchCms(query)
-        .then((data) => this._genHtml(data.allFAQs));
+        .then(
+          (data) => this._genHtml(data.allFAQs)          
+        )
   }
 
   /**

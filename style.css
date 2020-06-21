@@ -145,7 +145,7 @@ p {
 }
 
 .full-container {
-    height: 100vh;
+    height: 100vh;    
 }
 
 .new-experience-container {
@@ -160,11 +160,35 @@ p {
 
 /* i'm bad at names ;( */
 .center-row {
-    display: flex;
+    display: flex; 
+    gap: 25%;
 }
 
-.center-row > div {
+.center-row > div {    
     flex-grow: 1;
+}
+
+.letter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.text > p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.farewell {
+    margin-top: 10rem;        
+    font-size: 2.5rem;
+}
+
+.author {
+    align-self: end;
+    margin-top: 5rem;
+    font-size: 2.5rem;
 }
 
 @media (min-width: 901px) {}
