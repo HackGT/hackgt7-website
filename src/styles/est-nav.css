@@ -137,6 +137,10 @@ est-nav {
 }
 
 @media (max-width: 500px) {
+    .est-nav__current {
+        border: none;
+    }
+
     .est-nav__nav {
         display: flex;
         flex-direction: column;
@@ -153,7 +157,7 @@ est-nav {
         height: 100vh;
         z-index: 900;
         padding-top: 50px;
-        padding-right: 30px;
+        padding-right: 50px;
         left: calc(100% + 30px);
         transition: transform 0.3s ease-out;
 

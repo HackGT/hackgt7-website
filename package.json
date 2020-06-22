@@ -8,8 +8,10 @@
   },
   "dependencies": {
     "lax": "0.0.40",
+    "lax.js": "^1.2.5",
     "parcel": "^1.12.4",
-    "showdown": "^1.9.1"
+    "showdown": "^1.9.1",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "eslint": "^7.1.0",
