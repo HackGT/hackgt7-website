@@ -188,16 +188,45 @@ p {
     flex-grow: 1;
 }
 
+.letter-title {
+    font-size: 4rem;
+}
+
+.full-letter-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.illo1 {
+    background-color: #999;    
+    flex-basis: 25%;
+    flex-grow: 1;
+    height: 10rem;
+}
+
+.illo2 {
+    background-color: #999;
+    flex-basis: 25%;
+    flex-grow: 1;
+    height: 30rem;
+    align-self: end;
+}
+
 .letter-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
     width: 100%;
 }
 
+.text {
+    margin-top: 5rem;
+}
+
 .text > p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 1.23rem;
+    line-height: 1.2;
 }
 
 .farewell {
@@ -208,7 +237,7 @@ p {
 .author {
     align-self: end;
     margin-top: 5rem;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 @media (min-width: 901px) {}
