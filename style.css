@@ -51,10 +51,19 @@ p {
     line-height: 1.75rem;
 }
 
+.tracks__track {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;  
+    height: 100%;
+}
+
 /* TODO remove this */
 .temp-illo {
     background: grey;
-    height: 75%;
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
 }
 
 .splash-container {
@@ -158,38 +167,38 @@ p {
     text-align: center;
 }
 
-/* i'm bad at names ;( */
+/* i'm bad at names ;( haha nah man don't worry I like all your names */
 .center-row {
+    margin-top: 10%;
     display: flex; 
     gap: 25%;
-}
-
-.center-row > div {    
-    flex-grow: 1;
+    height: 80%;    
 }
 
 .letter-title {
     font-size: 4rem;
 }
 
-.full-letter-container {
-    display: flex;
-    gap: 3rem;
+.full-letter-container {    
+    position: relative;
 }
 
 .illo1 {
-    background-color: #999;    
-    flex-basis: 25%;
-    flex-grow: 1;
-    height: 10rem;
+    background-color: #999;
+    position: absolute;
+    left: 1%;
+    top: 0;
+    width: 22%;
+    height: 30%;
 }
 
 .illo2 {
     background-color: #999;
-    flex-basis: 25%;
-    flex-grow: 1;
-    height: 30rem;
-    align-self: end;
+    height: 50%;
+    width: 22%;
+    position: absolute;
+    right: 0;
+    bottom: 0;    
 }
 
 .letter-container {
@@ -197,7 +206,8 @@ p {
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    width: 100%;
+    width: 50%;
+    margin: auto;
 }
 
 .text {
@@ -205,7 +215,7 @@ p {
 }
 
 .text > p {
-    font-size: 1.23rem;
+    font-size: 1rem;
     line-height: 1.2;
 }
 
@@ -217,7 +227,7 @@ p {
 .author {
     align-self: end;
     margin-top: 5rem;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
 }
 
 @media (min-width: 901px) {}
