@@ -207,14 +207,14 @@ p {
     background-color: #999;
     position: absolute;
     left: 1%;
-    top: 0;
-    width: 22%;
-    height: 30%;
+    top: 10%;
+    width: 20%;
+    height: 35%;
 }
 
 .illo2 {
     background-color: #999;
-    height: 50%;
+    height: 55%;
     width: 22%;
     position: absolute;
     right: 0;
@@ -244,9 +244,15 @@ p {
     font-size: 2.5rem;
 }
 
+.letter__message {
+    text-align: center;
+    font-size: 1.5rem;    
+}
+
 .author {
     align-self: end;
-    margin-top: 5rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     font-size: 1.75rem;
 }
 
