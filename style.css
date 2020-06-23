@@ -24,22 +24,18 @@
     
     /* gutters */
     --content-padding: var(--nav-height) 0px; 
-    --content-margin: 0px 10%;
+    --content-margin: 0px 15%;
 
     /* nav */
     /* this variable is here and not in nav-bar.css because .content needs to use it */
     --nav-height: 60px;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0px;
+    padding: 0px;
     background: var(--background-color);
     font-family: var(--secondary-font);
-    overflow-x: hidden;
 }
 
 h1 {
@@ -116,6 +112,11 @@ p {
     font-size: 1.5rem;
 }
 
+.about-container-sentinel {
+    overflow-x: hidden;
+    padding: var(--content-margin);
+}
+
 .about-container {
     width: calc(200vw - 30%);
     height: calc(100vh - 180px);
@@ -125,6 +126,15 @@ p {
 
 .about-col-1 {
     width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-col-1 > div {
+    padding: 20px;
+    margin: 20px;
 }
 
 .about-col-2 {
@@ -138,15 +148,15 @@ p {
 }
 
 .about-col-2__row-1__item {
-    padding-right: 10%;
+    padding-right: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.about-col-2__row-1__item:first-child {
+.about-col-2__row-1__item:last-child {
     padding-left: 0px;
-    padding-right: 15%;
+    padding-right: 10%;
 }
 
 .about-col-2__row-2 {
@@ -155,6 +165,16 @@ p {
 
 .full-container {
     height: 100vh;    
+}
+
+.scroll-cue {
+    position: absolute;
+    bottom: 100px;
+    opacity: 0;    
+}
+
+.scroll-cue-anim {
+    animation: scroll-cue 2.5s ease-out forwards;
 }
 
 .new-experience-container {
@@ -234,15 +254,15 @@ p {
 
 @media (max-width: 900px) {
     .title {
-        font-size: 2.25rem;
+        font-size: 3rem;
     }
 
     .quote {
-        font-size: 1rem;
+        font-size: 2.5rem;
     }
 
     .date {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .splash-container {
@@ -258,5 +278,45 @@ p {
     .splash__main__item {
         height: 50%;
     }
+
+    .about-container {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .about-col-1 {
+        width: 100%;
+    }
+
+    .about-col-2__row-1 {
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .about-col-2__row-1__item {
+        padding: 30px 0px;
+    }
 }
 
+@keyframes scroll-cue {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

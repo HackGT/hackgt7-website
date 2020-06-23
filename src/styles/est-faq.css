@@ -21,7 +21,7 @@
     overflow: hidden;
     max-height: 0px;
     padding: 0 20px;
-    transition: max-height 0.2s ease-in;
+    transition: max-height 0.1s ease-out;
     background: lightgrey;
 }
 

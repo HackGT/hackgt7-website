@@ -105,6 +105,13 @@ class EstNav extends HTMLElement {
      * the nav bar
      */
   _setSectionIndex(i) {
+    const event = new CustomEvent('change-section', {
+        detail: {
+            section: this._targets[i].section,
+            name: this._targets[i].section.getAttribute('name'),
+            link: this._targets[i].link
+        }
+    });
     const currentLink = this._targets[this.sectionIndex].link;
     const newLink = this._targets[i].link;
 
@@ -113,6 +120,7 @@ class EstNav extends HTMLElement {
     // NOTE: the links can be null because of sections not on the nav bar
     this.nav.style.background = this._targets[i].section
         .getAttribute('background');
+
     if (currentLink) {
       currentLink.classList.toggle('est-nav__current');
     }
@@ -124,6 +132,8 @@ class EstNav extends HTMLElement {
     /* END style nav */
 
     this.sectionIndex = i;
+
+    document.body.dispatchEvent(event);
   }
 
   /**

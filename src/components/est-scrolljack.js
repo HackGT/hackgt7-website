@@ -34,8 +34,20 @@ class EstScrolljack extends HTMLElement {
     if (this.hasAttribute('offset')) {
       el.querySelector('.scrolljack__container--inner').style.top = this.getAttribute('offset');
     }
+
     this.attachShadow({mode: 'open'});
     this.shadowRoot.appendChild(el);
+    
+    if (this.hasAttribute('breakpoint')) {
+      const style = this.shadowRoot.querySelector('style');
+      style.innerHTML += `
+        @media (max-width: ${this.getAttribute('breakpoint')}) {
+            .scrolljack__container--outer {
+                height: fit-content !important;    
+            }
+        }
+      `;
+    }
   }
 }
 
