@@ -256,6 +256,37 @@ p {
     font-size: 1.75rem;
 }
 
+.sponsors__title {
+    text-align: center;
+    order: 2;
+}
+
+.sponsors__container1 {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.sponsors__container2 {
+    padding-top: 10vh;
+}
+
+.sponsors__illo1 {
+    background-color: #999;
+    height: 15vw;
+    width: 15vw;    
+    border-radius: 50%;
+    order: 1;
+}
+
+.sponsors__illo2 {
+    background-color: #999;    
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    order: 3;
+}
+
 @media (min-width: 901px) {}
 
 @media (max-width: 900px) {

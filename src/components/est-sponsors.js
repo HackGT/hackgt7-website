@@ -29,7 +29,7 @@ class EstSponsors extends HTMLElement {
 
       const sponsorImg = document.createElement('img');
       sponsorImg.src = sponsor.image.publicUrl;
-      sponsorImg.style.height = '200px';
+      sponsorImg.style.height = '8vw';
 
       const sponsorWebsite = document.createElement('a');
       sponsorWebsite.href = sponsor.website;
