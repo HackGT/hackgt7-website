@@ -391,6 +391,29 @@ p {
         margin-bottom: 10vh;
         font-size: 1.25rem;
     }
+
+    .sponsors__title {
+        text-align: center;
+        order: 2;
+    }
+    
+    .sponsors__container1 {
+        display: flex;
+        justify-content: center;
+        gap: 10vw;
+    }
+    
+    .sponsors__container2 {
+        padding-top: 10vh;
+    }
+    
+    .sponsors__illo1 {
+        display: none;
+    }
+    
+    .sponsors__illo2 {
+        display: none;
+    }
 }
 
 @keyframes scroll-cue {
