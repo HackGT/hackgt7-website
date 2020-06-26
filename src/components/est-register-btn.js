@@ -37,7 +37,7 @@ class EstRegisterBtn extends HTMLElement {
 
     const el = template.content.cloneNode(true);
     const text = this.getAttribute('text') ?
-      this.getAttribute('text') : 'Register';
+      this.getAttribute('text') : 'Sign Up for Our Mailing List!';
     el.querySelector('button').innerHTML = text;
     this.appendChild(el);
   }
