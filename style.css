@@ -64,7 +64,7 @@ p {
 
 .splash-container {
     display: flex;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 220px);
 }
 
 .splash__item {
@@ -89,7 +89,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
 }
 
@@ -112,180 +112,55 @@ p {
     font-size: 1.5rem;
 }
 
-.about-container-sentinel {
-    overflow-x: hidden;
-    padding: var(--content-margin);
-}
-
-.about-container {
-    width: calc(200vw - 30%);
-    height: calc(100vh - 180px);
-    padding-top: 120px;
-    display: flex;
-}
-
-.about-col-1 {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about-col-1 > div {
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    margin: 20px;
-}
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
 
-.about-col-2 {
-    width: 100%;
-    padding-left: 5%;
-}
+  #mc_embed_signup {
+      background:#fff;
+      clear:left;
+      font:14px Helvetica,Arial,sans-serif; 
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
 
-.about-col-2__row-1 {
-    display: flex;
-    height: 80%;
-}
-
-.about-col-2__row-1__item {
-    padding-right: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-col-2__row-1__item:last-child {
-    padding-left: 0px;
-    padding-right: 10%;
-}
-
-.about-col-2__row-2 {
-
-}
-
-.full-container {
-    height: 100vh;    
-}
-
-.scroll-cue {
-    position: absolute;
-    bottom: 100px;
-    opacity: 0;    
-}
-
-.scroll-cue-anim {
-    animation: scroll-cue 2.5s ease-out forwards;
-}
-
-.new-experience-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.new-experience {
-    text-align: center;
-}
-
-/* i'm bad at names ;( haha nah man don't worry I like all your names */
-.center-row {
-    margin-top: 10%;
-    display: flex; 
-    gap: 25%;
-    height: 80%;    
-}
-
-.letter-title {
-    font-size: 4rem;
-}
-
-.full-letter-container {    
-    position: relative;
-}
-
-.illo1 {
-    background-color: #999;
-    position: absolute;
-    left: 1%;
-    top: 10%;
-    width: 20%;
-    height: 35%;
-}
-
-.illo2 {
-    background-color: #999;
-    height: 55%;
-    width: 22%;
-    position: absolute;
-    right: 0;
-    bottom: 0;    
-}
-
-.letter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-    width: 50%;
-    margin: auto;
-}
-
-.text {
-    margin-top: 5rem;
-}
-
-.text > p {
-    font-size: 1rem;
-    line-height: 1.2;
-}
-
-.farewell {
-    margin-top: 10rem;        
-    font-size: 2.5rem;
-}
-
-.letter__message {
-    text-align: center;
-    font-size: 1.5rem;    
-}
-
-.author {
-    align-self: end;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    font-size: 1.75rem;
-}
-
-.sponsors__title {
-    text-align: center;
-    order: 2;
-}
-
-.sponsors__container1 {
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
-}
-
-.sponsors__container2 {
-    padding-top: 10vh;
-}
-
-.sponsors__illo1 {
-    background-color: #999;
-    height: 15vw;
-    width: 15vw;    
-    border-radius: 50%;
-    order: 1;
-}
-
-.sponsors__illo2 {
-    background-color: #999;    
-    height: 15vw;
-    width: 15vw;
-    border-radius: 50%;
-    order: 3;
-}
+  .close-div {
+      z-index: 100;
+      padding-bottom: 20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
 @media (min-width: 901px) {}
 

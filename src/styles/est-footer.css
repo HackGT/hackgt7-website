@@ -14,7 +14,7 @@ est-footer footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 80px;
 }
 
 .est-footer__item {
@@ -31,12 +31,12 @@ est-footer footer {
 }
 
 .est-footer__item--social img {
-  height: 35px;
+  height: 25px;
 }
 
 .est-footer__gh-issue {
   font-size: var(--footer-gh-issue-font-size);
-  height: 50px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
