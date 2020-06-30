@@ -52,12 +52,19 @@
 
 }
 
+html {
+    background: linear-gradient(0deg, rgba(142,178,135,1) 0%, rgba(52,142,163,1) 100%), no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
     margin: 10px;
     padding: 10px;
     margin-left: 0;
     padding-left: 0;
-    background: linear-gradient(0deg, rgba(142,178,135,1) 0%, rgba(52,142,163,1) 100%), no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -103,7 +110,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -12vh;
+    margin-top: -20vh;
 }
 
 .splash__main {
@@ -251,6 +258,7 @@ button.est-register-btn:active {
         /* margin-top: 10vh; */
         justify-content: center;
         align-items: center;
+        margin-top: 0vh;
     }
 
     .splash__item__2 .title {
@@ -301,14 +309,13 @@ button.est-register-btn:active {
     }
     
     .splash__illo {
-        margin-top: 10vh;
         justify-content: center;
         align-items: center;
         margin-bottom: 10vh;
     }
 
     .splash-container {
-        margin-top: 10vh;
+        margin-top: -10vh;
         justify-content: center;
         align-items: center;
         height: 120vh;
@@ -340,7 +347,7 @@ button.est-register-btn:active {
         justify-content: center;
         align-items: center;
         height: 110vh;
-        margin-top: 0;
+        margin-top: -1vh;
     }
 
     .splash__item__2 .title > img {
