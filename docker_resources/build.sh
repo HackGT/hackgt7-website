@@ -1,4 +1,4 @@
 #!/bin/sh
 yarn install
-yarn add parcel
+yarn global add parcel-bundler
 parcel index.html
