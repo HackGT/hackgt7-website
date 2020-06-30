@@ -58,6 +58,8 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 120%;
+    width: 100%;
 }
 
 body {
@@ -241,6 +243,10 @@ button.est-register-btn:active {
 @media (min-width: 901px) {}
 
 @media (max-width: 900px) {
+    html {
+        height: 150%;
+    }
+    
     #mlh-logo-container > a > img {
         height: 0;
     }
@@ -304,6 +310,10 @@ button.est-register-btn:active {
 }
 
 @media (max-width: 800px) {
+    html {
+        height: 130%;
+    }
+
     #mlh-logo-container > a > img {
         height: 0;
     }
@@ -339,6 +349,10 @@ button.est-register-btn:active {
 }
 
 @media (max-width: 500px) {
+    html {
+        height: 130%;
+    }
+    
     #mlh-logo-container > a > img {
         height: 0;
     }
