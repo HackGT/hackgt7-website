@@ -49,6 +49,9 @@ est-footer footer {
 @media (max-width: 900px) {
   .est-footer {
     margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
   }
 
   .est-footer__item--social {
@@ -65,7 +68,7 @@ est-footer footer {
     height: 5px;
     margin-top: 0px;
     font-size: 0.7em;
-    /* margin-bottom: 15px; */
+    width: 100vh;
   }
 
 
