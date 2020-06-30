@@ -1,4 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://p.typekit.net/p.css?s=1&k=ygj7eqw&ht=tk&f=14580.14581.14582.14583&a=10949164&app=typekit&e=css");
+
+@font-face {
+    font-family:"letter-gothic-std";
+    src:url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+    font-family:"letter-gothic-std";
+    src:url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/l?subset_id=2&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/d?subset_id=2&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/a?subset_id=2&fvd=i4&v=3") format("opentype");
+    font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+    font-family:"letter-gothic-std";
+    src:url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/l?subset_id=2&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/d?subset_id=2&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/a?subset_id=2&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:900;
+}
+
+@font-face {
+    font-family:"letter-gothic-std";
+    src:url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/l?subset_id=2&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/d?subset_id=2&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/a?subset_id=2&fvd=i7&v=3") format("opentype");
+    font-display:auto;font-style:italic;font-weight:900;
+}
 
 @import "./src/styles/est-nav.css";
 @import "./src/styles/est-register-btn.css";
@@ -9,33 +33,33 @@
 
 :root {
     /* re-export colors for better semantics */
-    --primary-color-1: black;
-    --primary-color-2: black;
+    --primary-color-1: white;
+    --primary-color-2: white;
     --secondary-color-1: var(--color-2);
     --secondary-color-2: var(--color-3);
     --accent-color-1: var(--color-4);
     --accent-color-2: var(--color-5);
     --background-color: var(--color-1);
-    --muted-color: black;
+    --muted-color: white;
 
     /* fonts */
-    --primary-font: Inter, sans-serif;
-    --secondary-font: Roboto, sans-serif;
+    --primary-font: "letter-gothic-std", monospace;
+    --secondary-font: "letter-gothic-std", monospace;
     
     /* gutters */
     --content-padding: var(--nav-height) 0px; 
-    --content-margin: 0px 15%;
+    --content-margin: 3% 15% 3% 0px;
 
-    /* nav */
-    /* this variable is here and not in nav-bar.css because .content needs to use it */
-    --nav-height: 60px;
 }
 
 body {
     margin: 0px;
     padding: 0px;
-    background: var(--background-color);
+    background: linear-gradient(0deg, rgba(142,178,135,1) 0%, rgba(52,142,163,1) 100%),
+    url(assets/test.svg);
     font-family: var(--secondary-font);
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 h1 {
@@ -47,28 +71,20 @@ p {
     line-height: 1.75rem;
 }
 
-.tracks__track {
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;  
-    height: 100%;
-}
-
-/* TODO remove this */
-.temp-illo {
-    background: grey;
-    height: 15vw;
-    width: 15vw;
-    border-radius: 50%;
-}
-
 .splash-container {
     display: flex;
-    height: calc(100vh - 220px);
+    height: calc(100vh);
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .splash__item {
-    width: 50%;
+    width: 65%;
+    padding-top: 5px;
+}
+
+.splash__item__2 {
+    width: 35%;
 }
 
 .splash__illo {
@@ -80,23 +96,39 @@ p {
 .splash__main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
 }
 
 .splash__main__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: bottom;
+    justify-content: bottom;
     padding: 15px;
-    width: 100%;
+    padding-top: 5px;
+    width: 120%;
+}
+
+.splash__item__2 .title > img {
+    height: 300px;
+}
+
+.splash__illo > img {
+    height: 1000px;
+    margin-left: 50px;
+    /* margin-bottom: 150px; */
+}
+
+.splash__illo {
+    padding-bottom: 150px;
 }
 
 .splash__main__item > div {
-    padding: 10px;
+    padding: 5px;
+    padding-left: 0px;
     text-align: center;
-    width: 100%; 
+    width: 120%; 
 }
 
 .title {
@@ -109,7 +141,7 @@ p {
 }
 
 .date {
-    font-size: 1.5rem;
+    font-size: 2.8rem;
 }
 
 /* The Modal (background) */
@@ -132,13 +164,16 @@ p {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 50px;
+    width: 40%; /* Could be more or less, depending on screen size */
   }
 
   #mc_embed_signup {
       background:#fff;
       clear:left;
-      font:14px Helvetica,Arial,sans-serif; 
+      font:14px var(--primary-font);
+      font-weight: 600; 
+      margin-top: 10px;
   }
   
   /* The Close Button */
@@ -147,6 +182,8 @@ p {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    margin-right: 20px;
+    margin-top: 5px;
   }
 
   .close-div {

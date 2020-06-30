@@ -1,11 +1,10 @@
 est-footer {
   --footer-bg: white;
-  --footer-color: black;
-  --footer-gh-issue-font-size: 0.75rem;
+  --footer-color: white;
+  --footer-gh-issue-font-size: 1rem;
 }
 
 est-footer footer {
-  background: var(--footer-bg);
   color: var(--footer-color);
 }
 
@@ -14,7 +13,9 @@ est-footer footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 120px;
+  width: 120%;
+  margin-top: 35px;
 }
 
 .est-footer__item {
@@ -31,13 +32,14 @@ est-footer footer {
 }
 
 .est-footer__item--social img {
-  height: 25px;
+  height: 30px;
 }
 
 .est-footer__gh-issue {
   font-size: var(--footer-gh-issue-font-size);
-  height: 20px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 120%;
 }
