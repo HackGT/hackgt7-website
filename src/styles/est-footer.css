@@ -1,12 +1,12 @@
 est-footer {
   --footer-bg: white;
-  --footer-color: black;
-  --footer-gh-issue-font-size: 0.75rem;
+  --footer-color: white;
+  --footer-gh-issue-font-size: 1rem;
 }
 
 est-footer footer {
-  background: var(--footer-bg);
   color: var(--footer-color);
+  font-family: var(--primary-font);
 }
 
 .est-footer {
@@ -14,7 +14,9 @@ est-footer footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 10vh;
+  width: 37vw;
+  margin-top: 35px;
 }
 
 .est-footer__item {
@@ -31,13 +33,115 @@ est-footer footer {
 }
 
 .est-footer__item--social img {
-  height: 25px;
+  height: 30px;
 }
 
 .est-footer__gh-issue {
   font-size: var(--footer-gh-issue-font-size);
-  height: 20px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 37vw;
+  margin-top: 5px;
+}
+
+a {
+  color: white
+}
+
+a:active {
+  color: rgb(53, 135, 117)
+}
+
+.est-footer__item--code-of-conduct {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 37vw;
+  margin-bottom: 3vh;
+  padding: 0;
+  height: 30px;
+}
+
+@media (max-width: 900px) {
+  .est-footer {
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+  }
+
+  .est-footer__item--social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .est-footer__item .est-footer__item--extra {
+    font-size: 0.5rem;
+  }
+
+  .est-footer__gh-issue {
+    height: 5px;
+    margin-top: 0px;
+    font-size: 0.7em;
+    width: 100vh;
+  }
+
+  .est-footer__item--code-of-conduct {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 37vw;
+    margin-bottom: 3vh;
+    padding: 0;
+    height: 20px;
+    font-size: 0.7rem;
+    margin-top: 2vh;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .est-footer {
+    width: 100vw;
+  }
+
+  .est-footer__gh-issue {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .est-footer {
+    width: 100vw;
+  }
+
+  .est-footer__gh-issue {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .est-footer {
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 0.75rem;
+  }
+
+  .est-footer__gh-issue {
+    height: 5px;
+    margin-top: 1vh;
+    font-size: 0.7em;
+    width: 100vw;
+  }
+
+  .est-footer__item--social img {
+    height: 20px;
+  }
 }

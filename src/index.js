@@ -28,6 +28,28 @@ window.onload = function() {
   };
 
   window.requestAnimationFrame(updateLax);
+
+  const socialContainer = this.querySelector('.est-footer__item--social');
+
+  for (const social of socials) {
+    const socialItem = document.createElement('a');
+    socialItem.href = social.url;
+    socialItem.target = '_blank';
+
+    const socialIcon = document.createElement('img');
+    let icon;
+    switch (social.name) {
+      case 'facebook': icon = facebook; break;
+      case 'twitter': icon = twitter; break;
+      case 'instagram': icon = instagram; break;
+      case 'github': icon = github; break;
+      case 'website': icon = website; break;
+    }
+    socialIcon.src = icon;
+
+    socialItem.appendChild(socialIcon);
+    socialContainer.appendChild(socialItem);
+  }
 };
 
 window.addEventListener('resize', function() {
@@ -71,11 +93,4 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
 }
