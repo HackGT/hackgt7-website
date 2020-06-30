@@ -1,3 +1,3 @@
 # hackgt7-website
 
-🚧 homosapiens are working on making this website 🚧
+Initial announcement for the event! Subscribe to our mailing list!
