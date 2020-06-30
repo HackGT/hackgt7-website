@@ -53,8 +53,10 @@
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 0;
+    padding-left: 0;
     background: linear-gradient(0deg, rgba(142,178,135,1) 0%, rgba(52,142,163,1) 100%), no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -74,10 +76,11 @@ p {
 }
 
 #mlh-logo-container > a > img {
-    height: 210px;
+    height: 120px;
     width: 70px;
     margin-left: 20px;
     position: absolute;
+    top: 0px;
 }
 
 .splash-container {
@@ -85,8 +88,9 @@ p {
     height: calc(100vh-550px);
     margin-left: 0;
     padding-left: 0;
-    padding-top: 0;
+    padding-top: 6vh;
     width: 100vw;
+    height: 100vh;
 }
 
 .splash__item__2 {
@@ -138,6 +142,7 @@ p {
 .date {
     font-size: 2rem;
     font-family: var(--primary-font);
+    color: white
 }
 
 /* The Modal (background) */
@@ -194,6 +199,96 @@ p {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .est-register-btn {
+    width: 50%;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    font-weight: 900;
+    background: rgb(53, 135, 117, 0.6);
+    border: 0px solid white;
+    box-shadow: 0 0 0 3px var(--color-5);
+    cursor: pointer;
+    transition: all 0.2s ease-out,
+        filter 0.2s ease-in;
+    margin-bottom: 50px;
+    color: white
+}
+
+button.est-register-btn:hover {
+    background: rgb(255, 255, 255, 0.8);
+    /* color: #70ab9e; */
+    color: rgb(53, 135, 117);
+    border: 0px solid rgb(255, 255, 255, 0);
+}
+
+button.est-register-btn:active {
+    border: 0px solid rgb(255, 255, 255, 0);
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.est-footer-div {
+    --footer-bg: white;
+    --footer-color: white;
+    --footer-gh-issue-font-size: 1rem;
+    font-family: var(--primary-font);
+  }
+  
+ .footer {
+    color: var(--footer-color);
+    font-family: var(--primary-font);
+  }
+  
+  .est-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 37vw;
+    margin-top: 35px;
+  }
+  
+  .est-footer__item {
+    padding: 5px;
+    color: white;
+  }
+  
+  .est-footer__item--social {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .est-footer__item--social a {
+    padding: 0 5px 0 5px;
+  }
+  
+  .est-footer__item--social img {
+    height: 30px;
+  }
+  
+  .est-footer__gh-issue {
+    font-size: var(--footer-gh-issue-font-size);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37vw;
+    margin-top: 5px;
+  }
+  
+  .est-footer__item--code-of-conduct {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 37vw;
+    margin-bottom: 3vh;
+    padding: 0;
+    height: 30px;
+  }
   
 
 @media (min-width: 901px) {}
@@ -213,10 +308,9 @@ p {
     }
 
     .splash__illo {
-        margin-top: 10vh;
+        /* margin-top: 10vh; */
         justify-content: center;
         align-items: center;
-        margin-bottom: 10vh;
     }
 
     .splash__item__2 .title {
@@ -236,11 +330,11 @@ p {
     .splash-container {
         flex-direction: column;
         justify-content: space-around;
-        height: 120vh;
+        height: 125vh;
     }
 
     .splash__item {
-        height: 30vh;
+        height: 40vh;
         width: 100vw;
     }
 
@@ -253,6 +347,58 @@ p {
     .modal-content {
         width: 70vw;
     }
+
+    .est-register-btn {
+        font-size: 1rem;
+        width: 40%;
+        margin-bottom: 5px;
+    }
+
+    .est-footer {
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+      }
+    
+      .est-footer__item--social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+      }
+    
+      .est-footer__item .est-footer__item--extra {
+        font-size: 0.5rem;
+      }
+    
+      .est-footer__gh-issue {
+        height: 5px;
+        margin-top: 0px;
+        font-size: 0.7em;
+        width: 100vh;
+      }
+    
+      .est-footer__item--code-of-conduct {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 37vw;
+        margin-bottom: 3vh;
+        padding: 0;
+        height: 20px;
+        font-size: 0.7rem;
+        margin-top: 2vh;
+        width: 100vw;
+        margin-left: 0;
+      }
+  
+      .est-footer {
+          width: 100vw;
+        }
+      
+        .est-footer__gh-issue {
+          width: 100vw;
+        }
 }
 
 @media (max-width: 800px) {
@@ -268,6 +414,7 @@ p {
     }
 
     .splash-container {
+        margin-top: 10vh;
         justify-content: center;
         align-items: center;
         height: 120vh;
@@ -288,6 +435,14 @@ p {
         margin-bottom: 0;
         padding-bottom: 0;
     }
+
+    .est-footer {
+        width: 100vw;
+      }
+    
+      .est-footer__gh-issue {
+        width: 100vw;
+      }
 }
 
 @media (max-width: 500px) {
@@ -299,6 +454,7 @@ p {
         justify-content: center;
         align-items: center;
         height: 110vh;
+        margin-top: 0;
     }
 
     .splash__item__2 .title > img {
@@ -327,7 +483,7 @@ p {
     }
 
     .splash__illo {
-        margin-top: 5vh;
+        margin-top: 0vh;
         align-items: center;
         justify-content: center;
         width: 90vw;
@@ -337,4 +493,30 @@ p {
     .modal-content {
         width: 70%;
     }
+
+    .est-register-btn {
+        font-size: 0.75rem;
+        width: 50%;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+    .est-footer {
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        font-size: 0.75rem;
+      }
+    
+      .est-footer__gh-issue {
+        height: 5px;
+        margin-top: 1vh;
+        font-size: 0.7em;
+        width: 100vw;
+      }
+    
+      .est-footer__item--social img {
+        height: 20px;
+      }
 }
