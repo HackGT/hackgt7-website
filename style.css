@@ -73,6 +73,13 @@ p {
     line-height: 1.75rem;
 }
 
+#mlh-logo-container > a > img {
+    height: 210px;
+    width: 70px;
+    margin-left: 20px;
+    position: absolute;
+}
+
 .splash-container {
     display: flex;
     height: calc(100vh-550px);
@@ -192,6 +199,10 @@ p {
 @media (min-width: 901px) {}
 
 @media (max-width: 900px) {
+    #mlh-logo-container > a > img {
+        height: 0;
+    }
+    
     .splash__item__2 .title > img {
         height: 18vh;
     }
@@ -244,6 +255,10 @@ p {
 }
 
 @media (max-width: 800px) {
+    #mlh-logo-container > a > img {
+        height: 0;
+    }
+    
     .splash__illo {
         margin-top: 10vh;
         justify-content: center;
@@ -275,6 +290,10 @@ p {
 }
 
 @media (max-width: 500px) {
+    #mlh-logo-container > a > img {
+        height: 0;
+    }
+    
     .splash-container {
         justify-content: center;
         align-items: center;
