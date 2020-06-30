@@ -46,6 +46,14 @@ est-footer footer {
   margin-top: 5px;
 }
 
+a {
+  color: white
+}
+
+a:visited {
+  color: rgb(53, 135, 117)
+}
+
 .est-footer__item--code-of-conduct {
   justify-content: center;
   align-items: center;
