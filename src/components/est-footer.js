@@ -19,6 +19,9 @@ template.innerHTML = `
       <span style="padding-right: 5px;">Found a bug?</span>
       <a href="${config.repo}/issues/new" target="_blank">File an issue!</a>
     </div>
+    <div class="est-footer__item est-footer__item--code-of-conduct">
+      <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>
+    </div>
 </footer>
 `;
 

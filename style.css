@@ -236,6 +236,7 @@ p {
     .splash-container {
         flex-direction: column;
         justify-content: space-around;
+        height: 120vh;
     }
 
     .splash__item {
@@ -269,7 +270,7 @@ p {
     .splash-container {
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 120vh;
     }
 
     .splash__illo > img {
@@ -297,7 +298,7 @@ p {
     .splash-container {
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 110vh;
     }
 
     .splash__item__2 .title > img {

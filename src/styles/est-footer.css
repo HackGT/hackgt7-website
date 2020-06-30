@@ -46,6 +46,16 @@ est-footer footer {
   margin-top: 5px;
 }
 
+.est-footer__item--code-of-conduct {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 37vw;
+  margin-bottom: 3vh;
+  padding: 0;
+  height: 30px;
+}
+
 @media (max-width: 900px) {
   .est-footer {
     margin-top: 5px;
@@ -71,6 +81,30 @@ est-footer footer {
     width: 100vh;
   }
 
+  .est-footer__item--code-of-conduct {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 37vw;
+    margin-bottom: 3vh;
+    padding: 0;
+    height: 20px;
+    font-size: 0.7rem;
+    margin-top: 2vh;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .est-footer {
+    width: 100vw;
+  }
+
+  .est-footer__gh-issue {
+    width: 100vw;
+  }
 }
 
 @media (max-width: 800px) {
