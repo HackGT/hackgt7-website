@@ -6,6 +6,7 @@ est-footer {
 
 est-footer footer {
   color: var(--footer-color);
+  font-family: var(--primary-font);
 }
 
 .est-footer {
@@ -13,8 +14,8 @@ est-footer footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120px;
-  width: 120%;
+  height: 10vh;
+  width: 37vw;
   margin-top: 35px;
 }
 
@@ -41,5 +42,31 @@ est-footer footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120%;
+  width: 37vw;
+  margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+  .est-footer {
+    margin-top: 5px;
+  }
+
+  .est-footer__item--social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .est-footer__item .est-footer__item--extra {
+    font-size: 0.5rem;
+  }
+
+  .est-footer__gh-issue {
+    height: 5px;
+    margin-top: 0px;
+    font-size: 0.7em;
+    /* margin-bottom: 15px; */
+  }
+
+
 }

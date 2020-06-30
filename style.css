@@ -55,11 +55,13 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(0deg, rgba(142,178,135,1) 0%, rgba(52,142,163,1) 100%),
-    url(assets/test.svg);
-    font-family: var(--secondary-font);
-    background-repeat: no-repeat;
-    height: 100%;
+    background: linear-gradient(0deg, rgba(142,178,135,1) 0%, rgba(52,142,163,1) 100%), no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: calc(100vh-550px);
+    width: 100vw;
 }
 
 h1 {
@@ -73,24 +75,24 @@ p {
 
 .splash-container {
     display: flex;
-    height: calc(100vh);
+    height: calc(100vh-550px);
     margin-left: 0;
     padding-left: 0;
-}
-
-.splash__item {
-    width: 65%;
-    padding-top: 5px;
+    padding-top: 0;
+    width: 100vw;
 }
 
 .splash__item__2 {
-    width: 35%;
+    width: 30vw;
+    /* margin-bottom: 15px; */
+    margin-right: 20vw;
 }
 
 .splash__illo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -12vh;
 }
 
 .splash__main {
@@ -107,41 +109,28 @@ p {
     justify-content: bottom;
     padding: 15px;
     padding-top: 5px;
-    width: 120%;
+    width: 40vw;
 }
 
 .splash__item__2 .title > img {
-    height: 300px;
+    height: 27vh;
 }
 
 .splash__illo > img {
-    height: 1000px;
-    margin-left: 50px;
+    height: 110vh;
+    /* margin-left: 50px; */
     /* margin-bottom: 150px; */
-}
-
-.splash__illo {
-    padding-bottom: 150px;
 }
 
 .splash__main__item > div {
     padding: 5px;
     padding-left: 0px;
     text-align: center;
-    width: 120%; 
-}
-
-.title {
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-.quote {
-    font-size: 2.5rem;
 }
 
 .date {
-    font-size: 2.8rem;
+    font-size: 2rem;
+    font-family: var(--primary-font);
 }
 
 /* The Modal (background) */
@@ -202,16 +191,32 @@ p {
 @media (min-width: 901px) {}
 
 @media (max-width: 900px) {
-    .title {
-        font-size: 3rem;
+    .splash__item__2 .title > img {
+        height: 120px;
     }
 
-    .quote {
-        font-size: 2.5rem;
+    .splash__illo > img {
+        height: 550px;
+        width: 70%;
+        /* margin-bottom: 150px; */
+    }
+
+    .splash__illo {
+        padding: 5px;
+    }
+
+    .splash__item__2 .title {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .splash__item__2 {
+        width: 100%;
     }
 
     .date {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        font-family: var(--primary-font);
     }
 
     .splash-container {
@@ -220,129 +225,15 @@ p {
     }
 
     .splash__item {
-        height: 50%;
+        height: 30%;
         width: 100%;
     }
 
     .splash__main__item {
-        height: 50%;
-    }
-
-    .about-container {
         width: 100%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        padding-top: 0px;
-    }
-
-    .about-col-1 {
-        width: 100%;
-    }
-
-    .about-col-2__row-1 {
-        display: flex;
-        flex-direction: column;
-        height: 80%;
-    }
-
-    .about-col-2__row-1__item {
-        padding: 30px 0px;
     }
 }
 
 @media (max-width: 375px) {
-    .letter-title {
-        font-size: 2.5rem;
-        padding-top: 5vh;
-    }
     
-    .full-letter-container {    
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-    
-    .illo1 {
-        position: initial;
-        background-color: #999;        
-        height: 50vw;
-        width: 50vw;
-        margin: auto;        
-    }
-    
-    .illo2 {
-        display: none;
-    }
-    
-    .letter-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 75%;
-        margin: auto;
-    }
-    
-    .text {
-        display: none;        
-    }
-
-    .text2 {
-        font-size: 1rem;
-        margin-top: 5vh;
-    }
-    
-    .letter__message {
-        text-align: center;
-        font-size: 1.5rem;    
-    }
-    
-    .author {
-        align-self: end;
-        margin-top: 2vh;
-        margin-bottom: 10vh;
-        font-size: 1.25rem;
-    }
-
-    .sponsors__title {
-        text-align: center;
-        order: 2;
-    }
-    
-    .sponsors__container1 {
-        display: flex;
-        justify-content: center;
-        gap: 10vw;
-    }
-    
-    .sponsors__container2 {
-        padding-top: 10vh;
-    }
-    
-    .sponsors__illo1 {
-        display: none;
-    }
-    
-    .sponsors__illo2 {
-        display: none;
-    }
-}
-
-@keyframes scroll-cue {
-    0% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-    25% {
-        transform: translateY(-50px);
-    }
-    50% {
-        transform: translateY(0px);
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
 }

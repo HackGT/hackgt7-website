@@ -2,7 +2,7 @@
     width: 50%;
     padding: 20px;
     border-radius: 50px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: var(--primary-font);
     font-weight: 900;
     background: rgb(53, 135, 117, 0.6);
@@ -26,5 +26,13 @@ button.est-register-btn:active {
     border: 0px solid rgb(255, 255, 255, 0);
     padding: 12px;
     font-size: 1.15rem;
+}
+
+@media (max-width: 900px) {
+    .est-register-btn {
+        font-size: 1rem;
+        width: 70%;
+        margin-bottom: 5px;
+    }
 }
 
