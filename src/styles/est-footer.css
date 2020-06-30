@@ -71,5 +71,25 @@ est-footer footer {
     width: 100vh;
   }
 
+}
 
+@media (max-width: 500px) {
+  .est-footer {
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-size: 0.75rem;
+  }
+
+  .est-footer__gh-issue {
+    height: 5px;
+    margin-top: 1vh;
+    font-size: 0.7em;
+    width: 100vw;
+  }
+
+  .est-footer__item--social img {
+    height: 20px;
+  }
 }

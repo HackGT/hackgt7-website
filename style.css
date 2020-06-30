@@ -149,7 +149,7 @@ p {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #348ea3;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -158,11 +158,12 @@ p {
   }
 
   #mc_embed_signup {
-      background:#fff;
+      background:#348ea3;
       clear:left;
       font:14px var(--primary-font);
       font-weight: 600; 
       margin-top: 10px;
+      color: white;
   }
   
   /* The Close Button */
@@ -182,7 +183,7 @@ p {
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: white;
     text-decoration: none;
     cursor: pointer;
   }
@@ -198,7 +199,6 @@ p {
     .splash__illo > img {
         height: 65vh;
         width: 60vw;
-        /* margin-bottom: 150px; */
     }
 
     .splash__illo {
@@ -237,8 +237,53 @@ p {
         height: 20vh;
         margin-bottom: 2vh;
     }
+
+    .modal-content {
+        width: 70vw;
+    }
 }
 
-@media (max-width: 375px) {
-    
+@media (max-width: 500px) {
+    .splash-container {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .splash__item__2 .title > img {
+        width: 100vw;
+    }
+
+    .splash__item__2 {
+        width: 90vw;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2vw;
+    }
+
+    .splash__main__item {
+        padding: 0;
+    }
+
+    .splash__illo > img {
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .date {
+        font-size: 0.8rem;
+    }
+
+    .splash__illo {
+        margin-top: 5vh;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        margin-bottom: 0;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
 }
