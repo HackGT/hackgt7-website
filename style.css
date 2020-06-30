@@ -243,6 +243,37 @@ p {
     }
 }
 
+@media (max-width: 800px) {
+    .splash__illo {
+        margin-top: 10vh;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+
+    .splash-container {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .splash__illo > img {
+        height: 60vh;
+        width: 85vw;
+    }
+
+    .splash__item__2 {
+        width: 100vw;
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+    .splash__main__item {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
 @media (max-width: 500px) {
     .splash-container {
         justify-content: center;

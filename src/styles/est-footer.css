@@ -73,6 +73,16 @@ est-footer footer {
 
 }
 
+@media (max-width: 800px) {
+  .est-footer {
+    width: 100vw;
+  }
+
+  .est-footer__gh-issue {
+    width: 100vw;
+  }
+}
+
 @media (max-width: 500px) {
   .est-footer {
     margin-top: 5px;
