@@ -143,8 +143,8 @@ body {
 /* Modal Content/Box */
 .modal-content {
     background-color: #348ea3;
-    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
+    margin: 20px auto;
     border: 1px solid #888;
     border-radius: 50px;
     width: 40%; /* Could be more or less, depending on screen size */
@@ -157,6 +157,10 @@ body {
     font-weight: 600;
     margin-top: 10px;
     color: white;
+}
+
+.mc-field-group input, .mc-field-group select {
+    border-radius: 10px !important; 
 }
 
 /* The Close Button */
