@@ -1,27 +1,55 @@
 @import url("https://p.typekit.net/p.css?s=1&k=ygj7eqw&ht=tk&f=14580.14581.14582.14583&a=10949164&app=typekit&e=css");
 
 @font-face {
-    font-family:"letter-gothic-std";
-    src:url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:400;
+    font-family: "letter-gothic-std";
+    src: url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
-    font-family:"letter-gothic-std";
-    src:url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/l?subset_id=2&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/d?subset_id=2&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/a?subset_id=2&fvd=i4&v=3") format("opentype");
-    font-display:auto;font-style:italic;font-weight:400;
+    font-family: "letter-gothic-std";
+    src: url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/l?subset_id=2&fvd=i4&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/d?subset_id=2&fvd=i4&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/a?subset_id=2&fvd=i4&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 400;
 }
 
 @font-face {
-    font-family:"letter-gothic-std";
-    src:url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/l?subset_id=2&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/d?subset_id=2&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/a?subset_id=2&fvd=n7&v=3") format("opentype");
-    font-display:auto;font-style:normal;font-weight:900;
+    font-family: "letter-gothic-std";
+    src: url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/l?subset_id=2&fvd=n7&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/d?subset_id=2&fvd=n7&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/a?subset_id=2&fvd=n7&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 900;
 }
 
 @font-face {
-    font-family:"letter-gothic-std";
-    src:url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/l?subset_id=2&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/d?subset_id=2&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/a?subset_id=2&fvd=i7&v=3") format("opentype");
-    font-display:auto;font-style:italic;font-weight:900;
+    font-family: "letter-gothic-std";
+    src: url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/l?subset_id=2&fvd=i7&v=3")
+            format("woff2"),
+        url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/d?subset_id=2&fvd=i7&v=3")
+            format("woff"),
+        url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/a?subset_id=2&fvd=i7&v=3")
+            format("opentype");
+    font-display: auto;
+    font-style: italic;
+    font-weight: 900;
 }
 
 @import "./src/styles/est-nav.css";
@@ -32,129 +60,73 @@
 @import "./src/styles/est-footer.css";
 
 :root {
-    /* re-export colors for better semantics */
-    --primary-color-1: white;
-    --primary-color-2: white;
-    --secondary-color-1: var(--color-2);
-    --secondary-color-2: var(--color-3);
-    --accent-color-1: var(--color-4);
-    --accent-color-2: var(--color-5);
-    --background-color: var(--color-1);
-    --muted-color: white;
-
     /* fonts */
     --primary-font: "letter-gothic-std", monospace;
     --secondary-font: "letter-gothic-std", monospace;
-    
+
     /* gutters */
-    --content-padding: var(--nav-height) 0px; 
-    --content-margin: 3% 15% 3% 0px;
-
-}
-
-html {
-    background: linear-gradient(0deg, rgba(142,178,135,1) 0%, rgba(52,142,163,1) 100%), no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 120%;
-    width: 100%;
+    --content-padding: var(--nav-height) 0px;
+    --content-margin: 0%;
 }
 
 body {
-    margin: 10px;
-    padding: 10px;
-    margin-left: 0;
-    padding-left: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: calc(100vh-550px);
-    width: 100vw;
-}
-
-h1 {
-    font-family: var(--primary-font);
+    background: linear-gradient(
+        0deg,
+        rgba(142, 178, 135, 1) 0%,
+        rgba(52, 142, 163, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0px;
     margin: 0px;
 }
 
-p {
-    line-height: 1.75rem;
-}
-
-#mlh-logo-container > a > img {
-    height: 120px;
-    width: 70px;
-    margin-left: 20px;
+#mlh-logo-container {
     position: absolute;
     top: 0px;
+    left: 30px;
+}
+
+#mlh-logo-container img {
+    height: 120px;
+    width: 70px;
 }
 
 .splash-container {
     display: flex;
-    height: calc(100vh-550px);
-    margin-left: 0;
-    padding-left: 0;
-    padding-top: 6vh;
-    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     height: 100vh;
 }
 
-.splash__item__2 {
-    width: 30vw;
-    /* margin-bottom: 15px; */
-    margin-right: 20vw;
+.splash__item {
 }
 
-.splash__illo {
+.splash__item > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -20vh;
+    align-items: center;
+    padding: 10px;
+}
+
+.splash__illo {
+    height: 700px;
 }
 
 .splash__main {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
-}
-
-.splash__main__item {
-    display: flex;
-    flex-direction: column;
-    align-items: bottom;
-    justify-content: bottom;
-    padding: 15px;
-    padding-top: 5px;
-    width: 40vw;
-}
-
-.splash__item__2 .title > img {
-    height: 27vh;
-}
-
-.splash__illo > img {
-    height: 110vh;
-    /* margin-left: 50px; */
-    /* margin-bottom: 150px; */
-}
-
-.splash__main__item > div {
-    padding: 5px;
-    padding-left: 0px;
-    text-align: center;
 }
 
 .date {
     font-size: 2rem;
     font-family: var(--primary-font);
-    color: white
+    color: white;
+    padding-bottom: 30px;
 }
 
-/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -164,248 +136,106 @@ p {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
     background-color: #348ea3;
-    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
+    margin: 20px auto;
     border: 1px solid #888;
     border-radius: 50px;
     width: 40%; /* Could be more or less, depending on screen size */
-  }
+}
 
-  #mc_embed_signup {
-      background:#348ea3;
-      clear:left;
-      font:14px var(--primary-font);
-      font-weight: 600; 
-      margin-top: 10px;
-      color: white;
-  }
-  
-  /* The Close Button */
-  .close {
+#mc_embed_signup {
+    background: #348ea3;
+    clear: left;
+    font: 14px var(--primary-font);
+    font-weight: 600;
+    margin-top: 10px;
+    color: white;
+}
+
+.mc-field-group input,
+.mc-field-group select {
+    border-radius: 10px !important;
+}
+
+/* The Close Button */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
     margin-right: 20px;
     margin-top: 5px;
-  }
+}
 
-  .close-div {
-      z-index: 100;
-      padding-bottom: 20px;
-  }
-  
-  .close:hover,
-  .close:focus {
+.close-div {
+    z-index: 100;
+    padding-bottom: 20px;
+}
+
+.close:hover,
+.close:focus {
     color: white;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  .est-register-btn {
-    width: 50%;
-    padding: 20px;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-family: var(--primary-font);
-    font-weight: 900;
-    background: rgb(53, 135, 117, 0.6);
-    border: 0px solid white;
-    box-shadow: 0 0 0 3px var(--color-5);
-    cursor: pointer;
-    transition: all 0.2s ease-out,
-        filter 0.2s ease-in;
-    margin-bottom: 50px;
-    color: white
 }
 
-button.est-register-btn:hover {
-    background: rgb(255, 255, 255, 0.8);
-    /* color: #70ab9e; */
-    color: rgb(53, 135, 117);
-    border: 0px solid rgb(255, 255, 255, 0);
+@media (min-width: 901px) {
 }
-
-button.est-register-btn:active {
-    border: 0px solid rgb(255, 255, 255, 0);
-    padding: 15px;
-    font-size: 1rem;
-}
-  
-
-@media (min-width: 901px) {}
 
 @media (max-width: 900px) {
-    html {
-        height: 150%;
-    }
-    
-    #mlh-logo-container > a > img {
-        height: 0;
-    }
-    
-    .splash__item__2 .title > img {
-        height: 18vh;
-    }
-
-    .splash__illo > img {
-        height: 65vh;
-        width: 60vw;
-    }
-
     .splash__illo {
-        /* margin-top: 10vh; */
-        justify-content: center;
-        align-items: center;
-        margin-top: 0vh;
+        height: 500px;
     }
 
-    .splash__item__2 .title {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .splash__item__2 {
-        width: 100vw;
+    .title {
+        height: 200px;
     }
 
     .date {
-        font-size: 1.3rem;
-        font-family: var(--primary-font);
-    }
-
-    .splash-container {
-        flex-direction: column;
-        justify-content: space-around;
-        height: 125vh;
-    }
-
-    .splash__item {
-        height: 40vh;
-        width: 100vw;
-    }
-
-    .splash__main__item {
-        width: 100vw;
-        height: 20vh;
-        margin-bottom: 2vh;
+        height: 1.75rem;
     }
 
     .modal-content {
-        width: 70vw;
-    }
-
-    .est-register-btn {
-        font-size: 1rem;
-        width: 40%;
-        margin-bottom: 5px;
-    }
-}
-
-@media (max-width: 800px) {
-    html {
-        height: 130%;
-    }
-
-    #mlh-logo-container > a > img {
-        height: 0;
-    }
-    
-    .splash__illo {
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 10vh;
-    }
-
-    .splash-container {
-        margin-top: -10vh;
-        justify-content: center;
-        align-items: center;
-        height: 120vh;
-    }
-
-    .splash__illo > img {
-        height: 60vh;
-        width: 85vw;
-    }
-
-    .splash__item__2 {
-        width: 100vw;
-        margin-right: 0;
-        padding-top: 0;
-    }
-
-    .splash__main__item {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-}
-
-@media (max-width: 500px) {
-    html {
-        height: 130%;
-    }
-    
-    #mlh-logo-container > a > img {
-        height: 0;
-    }
-    
-    .splash-container {
-        justify-content: center;
-        align-items: center;
-        height: 110vh;
-        margin-top: -1vh;
-    }
-
-    .splash__item__2 .title > img {
-        width: 100vw;
-    }
-
-    .splash__item__2 {
-        width: 90vw;
-        margin-top: 5vh;
-        justify-content: center;
-        align-items: center;
-        margin-right: 2vw;
-    }
-
-    .splash__main__item {
-        padding: 0;
-    }
-
-    .splash__illo > img {
-        height: 50vh;
-        width: 90vw;
-    }
-
-    .date {
-        font-size: 0.8rem;
-    }
-
-    .splash__illo {
-        margin-top: 0vh;
-        align-items: center;
-        justify-content: center;
-        width: 90vw;
-        margin-bottom: 0;
-    }
-
-    .modal-content {
+        margin: 20px auto;
         width: 70%;
     }
+}
 
-    .est-register-btn {
-        font-size: 0.75rem;
-        width: 50%;
-        margin-bottom: 5px;
-        padding: 10px;
+@media (max-width: 600px) {
+    #mlh-logo-container {
+        display: none;
+    }
+
+    .splash__illo {
+        height: 300px;
+    }
+
+    .title {
+        height: 150px;
+    }
+
+    .date {
+        font-size: 1.5rem;
     }
 }
 
+@media (max-width: 400px) {
+    .splash__illo {
+        height: 300px;
+    }
+
+    .title {
+        height: 100px;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+}
