@@ -159,8 +159,9 @@ body {
     color: white;
 }
 
-.mc-field-group input, .mc-field-group select {
-    border-radius: 10px !important; 
+.mc-field-group input,
+.mc-field-group select {
+    border-radius: 10px !important;
 }
 
 /* The Close Button */
@@ -199,6 +200,11 @@ body {
 
     .date {
         height: 1.75rem;
+    }
+
+    .modal-content {
+        margin: 20px auto;
+        width: 70%;
     }
 }
 
