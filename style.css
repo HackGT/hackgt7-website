@@ -7,8 +7,8 @@
 
 :root {
     /* fonts */
-    --primary-font: 'Quicksand';
-    --secondary-font: 'Quicksand';
+    --primary-font: 'Quicksand', 'sans-serif';
+    --secondary-font: 'Quicksand', 'sans-serif';
 
     /* gutters */
     --content-padding: var(--nav-height) 0px;
