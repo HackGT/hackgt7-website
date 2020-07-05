@@ -1,3 +1,3 @@
 # hackgt7-website
 
-Initial announcement for the event! Subscribe to our mailing list!
+Initial announcement for the event, subscribe to our mailing list!
