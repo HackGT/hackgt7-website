@@ -1,59 +1,3 @@
-@import url("https://p.typekit.net/p.css?s=1&k=ygj7eqw&ht=tk&f=14580.14581.14582.14583&a=10949164&app=typekit&e=css");
-
-@font-face {
-    font-family: "letter-gothic-std";
-    src: url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("woff2"),
-        url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("woff"),
-        url("https://use.typekit.net/af/28f823/000000000000000000012e1e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
-            format("opentype");
-    font-display: auto;
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "letter-gothic-std";
-    src: url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/l?subset_id=2&fvd=i4&v=3")
-            format("woff2"),
-        url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/d?subset_id=2&fvd=i4&v=3")
-            format("woff"),
-        url("https://use.typekit.net/af/89fea7/000000000000000000012e1d/27/a?subset_id=2&fvd=i4&v=3")
-            format("opentype");
-    font-display: auto;
-    font-style: italic;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "letter-gothic-std";
-    src: url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/l?subset_id=2&fvd=n7&v=3")
-            format("woff2"),
-        url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/d?subset_id=2&fvd=n7&v=3")
-            format("woff"),
-        url("https://use.typekit.net/af/7676e3/000000000000000000012e1b/27/a?subset_id=2&fvd=n7&v=3")
-            format("opentype");
-    font-display: auto;
-    font-style: normal;
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: "letter-gothic-std";
-    src: url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/l?subset_id=2&fvd=i7&v=3")
-            format("woff2"),
-        url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/d?subset_id=2&fvd=i7&v=3")
-            format("woff"),
-        url("https://use.typekit.net/af/cb8eed/000000000000000000012e1c/27/a?subset_id=2&fvd=i7&v=3")
-            format("opentype");
-    font-display: auto;
-    font-style: italic;
-    font-weight: 900;
-}
-
-/* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
-
 @import "./src/styles/est-nav.css";
 @import "./src/styles/est-register-btn.css";
 @import "./src/styles/est-schedule.css";
@@ -63,8 +7,8 @@
 
 :root {
     /* fonts */
-    --primary-font: "letter-gothic-std", monospace;
-    --secondary-font: "letter-gothic-std", monospace;
+    --primary-font: 'Quicksand', 'sans-serif';
+    --secondary-font: 'Quicksand', 'sans-serif';
 
     /* gutters */
     --content-padding: var(--nav-height) 0px;
