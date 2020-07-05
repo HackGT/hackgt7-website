@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 @import "./src/styles/est-nav.css";
 @import "./src/styles/est-register-btn.css";
 @import "./src/styles/est-schedule.css";
@@ -9,8 +7,8 @@
 
 :root {
     /* fonts */
-    --primary-font: 'Quicksand', sans-serif;
-    --secondary-font: 'Quicksand', sans-serif;
+    --primary-font: 'Quicksand';
+    --secondary-font: 'Quicksand';
 
     /* gutters */
     --content-padding: var(--nav-height) 0px;
