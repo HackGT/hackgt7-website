@@ -1,4 +1,4 @@
-@import url("https://p.typekit.net/p.css?s=1&k=ygj7eqw&ht=tk&f=14580.14581.14582.14583&a=10949164&app=typekit&e=css");
+/* @import url("https://p.typekit.net/p.css?s=1&k=ygj7eqw&ht=tk&f=14580.14581.14582.14583&a=10949164&app=typekit&e=css");
 
 @font-face {
     font-family: "letter-gothic-std";
@@ -51,6 +51,9 @@
     font-style: italic;
     font-weight: 900;
 }
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 @import "./src/styles/est-nav.css";
 @import "./src/styles/est-register-btn.css";
@@ -61,8 +64,8 @@
 
 :root {
     /* fonts */
-    --primary-font: "letter-gothic-std", monospace;
-    --secondary-font: "letter-gothic-std", monospace;
+    --primary-font: "Quicksand";
+    --secondary-font: "Quicksand";
 
     /* gutters */
     --content-padding: var(--nav-height) 0px;
