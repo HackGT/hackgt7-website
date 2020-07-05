@@ -63,8 +63,8 @@
 
 :root {
     /* fonts */
-    --primary-font: "Quicksand";
-    --secondary-font: "Quicksand";
+    --primary-font: "letter-gothic-std", monospace;
+    --secondary-font: "letter-gothic-std", monospace;
 
     /* gutters */
     --content-padding: var(--nav-height) 0px;
