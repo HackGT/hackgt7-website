@@ -39,7 +39,6 @@ class EstSchedule extends HTMLElement {
   connectedCallback() {
     fetchCms(query)
         .then((data) => {
-          console.log(data);
           this._genHtml(data.allEvents);
         })
         .catch((err) => console.error(err));
