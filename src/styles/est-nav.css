@@ -3,19 +3,19 @@ est-nav {
     width: 100%;
     z-index: 1000;
 
-    --nav-background: white;
+    --nav-background: inherit;
     --nav-font-family: var(--secondary-font);
-    --nav-font-size: 1rem;
+    --nav-font-size: 1.2rem;
     --nav-font-weight: normal;
     --nav-padding-left: 5%;
     --nav-padding-right: 5%;
 
 
     /* anchor styles */
-    --nav-anchor-color: black;
-    --nav-anchor-highlight: black;
-    --nav-anchor-visited-color: black;
-    --nav-anchor-hover-color: black;
+    --nav-anchor-color: var(--primary-color-1);
+    --nav-anchor-highlight: var(--primary-color-1);
+    --nav-anchor-visited-color: var(--primary-color-1);
+    --nav-anchor-hover-color: var(--primary-color-1);
     --nav-anchor-padding: 10px;
 }
 

@@ -1,17 +1,17 @@
 .est-register-btn {
-    width: 60%;
-    padding: 15px;
-    border-radius: 20px;
-    font-weight: 700;
+    width: 100%;
+    padding: 20px;
+    border-radius: 50px;
     font-size: 1.25rem;
-    font-family: var(--primary-font);
-    background: var(--color-5);
-    border: 5px solid black;
+    font-family: var(--secondary-font);
+    font-weight: 900;
+    background: rgb(53, 135, 117, 0.6);
+    border: 0px solid white;
     box-shadow: 0 0 0 3px var(--color-5);
     cursor: pointer;
-    transition: all 0.1s ease-out,
+    transition: all 0.2s ease-out,
         filter 0.2s ease-in;
-
+    color: white
 }
 
 button.est-register-btn:hover {
