@@ -194,6 +194,7 @@ est-register-btn {
 }
 
 .full-container {
+    padding-top: 120px;
     height: 100vh;
 }
 
@@ -213,10 +214,18 @@ est-register-btn {
     align-items: center;
     overflow: hidden;
     max-height: 100vh;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
 }
 
 .new-experience {
     text-align: center;
+    font-size: 4.75vw;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+    z-index: 900;
+    position: relative;
 }
 
 /* i'm bad at names ;( haha nah man don't worry I like all your names */

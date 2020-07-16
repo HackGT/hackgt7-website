@@ -43,18 +43,11 @@ window.addEventListener("resize", function() {
 // Used for smooth scrolling
 // CSS scroll-behavior not yet fully supported
 // https://caniuse.com/#search=scroll-behavior
-const scrollCue = document.querySelector(".scroll-cue");
-let isSeenTracks = false;
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute("href")).scrollIntoView({
             behavior: "smooth"
         });
-
-        if (!isSeenTracks && e.target.getAttribute("href") == "#tracks") {
-            isSeenTracks = true;
-            scrollCue.classList.add("scroll-cue-anim");
-        }
     });
 });
