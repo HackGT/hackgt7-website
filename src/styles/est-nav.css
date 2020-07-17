@@ -161,7 +161,7 @@ est-nav {
         left: calc(100% + 30px);
         transition: transform 0.3s ease-out;
 
-        background: white;
+        background: black;
     }
 
     .est-nav__display--mobile {

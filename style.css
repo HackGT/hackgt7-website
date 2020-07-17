@@ -9,6 +9,7 @@
         url("./assets/fonts/Bavro-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @import "./src/styles/est-nav.css";

@@ -15,14 +15,18 @@
     font-weight: bold;
     padding: 20px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .est-faq__container__item--answer {
     overflow: hidden;
     max-height: 0px;
     padding: 0 20px;
-    transition: max-height 0.1s ease-out;
+    transition: max-height 0.3s ease-out;
     background: lightgrey;
+    position: relative;
+    top: -20px;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .est-faq__container__item--question::after {

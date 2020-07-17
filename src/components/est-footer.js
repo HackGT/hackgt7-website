@@ -52,6 +52,8 @@ class EstFooter extends HTMLElement {
       const socialItem = document.createElement('a');
       socialItem.href = social.url;
       socialItem.target = '_blank';
+      socialItem.alt = social.name;
+      socialItem.rel = 'noopener';
 
       const socialIcon = document.createElement('img');
       let icon;
