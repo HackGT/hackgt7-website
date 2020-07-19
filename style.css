@@ -235,11 +235,15 @@ est-register-btn {
 
 /* i'm bad at names ;( haha nah man don't worry I like all your names */
 .center-row {
-    margin-top: 10%;
+    margin: 5%;
     display: flex;
     gap: 25%;
     height: 80%;
+    overflow: hidden;
 }
+
+.tracks__track {
+    margin-top: 60px; }
 
 @media (min-width: 901px) {
 }
