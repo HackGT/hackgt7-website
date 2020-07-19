@@ -46,11 +46,17 @@
                     </a>
                 </div>
                 <div class="splash-container">
-                    <div> 
-                        <picture class="splash__illo" >
-                            <source type="image/webp" srcset="assets/brand/hackgt7-logo.webp">
-                            <source type="image/jpeg" srcset="assets/brand/hackgt7-logo.png">
-                            <img class="splash__illo" src="assets/brand/hackgt7-logo.png" alt="HackGT 7 logo"/>
+                    <div>
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcset="assets/brand/hackgt7-logo.webp"
+                            />
+                            <img
+                                class="splash__illo"
+                                src="assets/brand/hackgt7-logo.png"
+                                alt="HackGT 7 logo"
+                            />
                         </picture>
                     </div>
                     <div class="splash__item splash__main">
@@ -70,16 +76,36 @@
                     <div class="about-container-sentinel">
                         <div
                             class="lax about-container"
-                            data-lax-translate-x_large="0 0, (-0.5*vw) 0, (-1.9*vw) (-0.93*vw)"
+                            data-lax-translate-x_large="0 0, (-0.5*vw) 0, (-1.9*vw) (-1*vw)"
                             data-lax-anchor="#parent"
                         >
-                            <div
-                                class="lax about-col-1"
-                                data-lax-opacity_large="0 0, (-0.3*vw) 1"
-                                data-lax-translate-y_large="0 200, (-0.2*vw) 0"
-                                data-lax-anchor="#parent"
-                            >
-                                <div class="quote">Reimagine Reality</div>
+                            <div class="about-col-1">
+                                <div
+                                    class="lax quote"
+                                    style="font-size: 2.95rem;"
+                                    data-lax-opacity_large="0 0, (-0.3*vw) 1"
+                                    data-lax-translate-y_large="0 200, (-0.2*vw) 0"
+                                    data-lax-anchor="#parent"
+                                >
+                                    Reimagine Reality
+                                </div>
+                                <div>
+                                    <picture>
+                                        <source
+                                            type="image/webp"
+                                            srcset="assets/illos/about-game-cube.webp"
+                                        />
+                                        <img
+                                            class="lax"
+                                            style="height: 350px; width: auto; padding: 30px;"
+                                            src="assets/illos/about-game-cube.png"
+                                            alt="HackGT 7 logo"
+                                            data-lax-opacity_large="0 0, (-0.3*vw) 1"
+                                            data-lax-translate-y_large="0 200, (-0.25*vw) 0"
+                                            data-lax-anchor="#parent"
+                                        />
+                                    </picture>
+                                </div>
                             </div>
                             <div class="about-col-2">
                                 <div class="about-col-2__row-1">
@@ -142,14 +168,10 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="lax"
-                                    data-lax-translate-x_large="0 (1*vw), (-0.4*vw) 0"
-                                    data-lax-scale_large="0 (1.5), (-0.4*vw) 1"
+                                    class="lax about-col-2__row-2"
+                                    data-lax-translate-x_large="0 (1*vw), (-0.4*vw) 0, (-1.8*vw) (-0.5*vw)"
                                     data-lax-anchor="#parent"
-                                    style="height: 20%; background: grey;"
-                                >
-                                    <div>placeholder</div>
-                                </div>
+                                ></div>
                             </div>
                         </div>
                     </div>
@@ -216,9 +238,7 @@
                 </est-scrolljack>
             </est-section>
             <est-section name="schedule">
-                <div 
-                        class="title"
-                    >schedule</div>
+                <div class="title">schedule</div>
                 <div>
                     Coming soon...
                 </div>
