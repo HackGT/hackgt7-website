@@ -108,7 +108,8 @@ class EstNav extends HTMLElement {
     const event = new CustomEvent('change-section', {
         detail: {
             section: this._targets[i].section,
-            name: this._targets[i].section.getAttribute('name'),
+            curr: this._targets[i].section.getAttribute('name'),
+            prev: this._targets[this.sectionIndex].section.getAttribute('name'),
             link: this._targets[i].link
         }
     });
