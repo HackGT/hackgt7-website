@@ -17,7 +17,7 @@ template.innerHTML = `
     </div>
     <div class="est-footer__gh-issue">
       <span style="padding-right: 5px;">Found a bug?</span>
-      <a href="${config.repo}/issues/new" target="_blank">File an issue!</a>
+      <a href="${config.repo}/issues/new" target="_blank" rel="noopener">File an issue!</a>
     </div>
 </footer>
 `;
@@ -52,10 +52,11 @@ class EstFooter extends HTMLElement {
       const socialItem = document.createElement('a');
       socialItem.href = social.url;
       socialItem.target = '_blank';
-      socialItem.alt = social.name;
       socialItem.rel = 'noopener';
 
       const socialIcon = document.createElement('img');
+      socialIcon.alt = social.name;
+
       let icon;
       switch (social.name) {
         case 'facebook': icon = facebook; break;
