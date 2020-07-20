@@ -108,7 +108,7 @@
                                 </div>
                             </div>
                             <div class="about-col-2">
-                                <div class="about-col-2__row-1">
+                                <div class="lax about-col-2__row-1">
                                     <div
                                         class="lax about-col-2__row-1__item"
                                         data-lax-opacity_large="0 0, (-0.2*vw) 0, (-0.5*vw) 1"
@@ -169,7 +169,8 @@
                                 </div>
                                 <div
                                     class="lax about-col-2__row-2"
-                                    data-lax-translate-x_large="0 (1*vw), (-0.4*vw) 0, (-2.5*vw) (-0.5*vw)"
+                                    data-lax-translate-x_large="0 (1*vw), (-0.4*vw) 0, (-1.8*vw) (-0.5*vw)"
+                                    data-lax-translate-y_large="0 0, (-2*vw) 0, (-2.5*vw) (-0.5*vh)"
                                     data-lax-anchor="#parent"
                                 ></div>
                             </div>
@@ -199,7 +200,7 @@
                         class="full-container"
                     >
                         <div
-                            class="lax title"
+                            class="lax quote"
                             data-lax-opacity_large="0 0, (-0.3*vw) 1"
                             data-lax-translate-y_large="0 200, (-0.2*vw) 0"
                             data-lax-anchor="#tra"
@@ -278,68 +279,41 @@
                 </est-scrolljack>
             </est-section>
             <est-section name="schedule">
-                <div class="title">schedule</div>
-                <div>
+                <div class="quote">schedule</div>
+                <div style="font-size: 2.5rem;">
                     Coming soon...
                 </div>
             </est-section>
 
             <est-section name="faqs">
-                <div class="title">faqs</div>
+                <div class="quote">faqs</div>
                 <est-faq></est-faq>
             </est-section>
 
             <est-section name="letter" padding="0" margin="0">
-                <div class="full-letter-container">
-                    <div class="illo1"></div>
-                    <div class="letter-container">
-                        <div class="letter-title">DEAR HACKER</div>
-                        <div class="text">
-                            <p>
-                                As a major player in the field of computer
-                                science outreach, HackGT throws events to show
-                                the world the beauty of STEAM. Through
-                                large-scale collegiate hackathons and smaller,
-                                individualized workshops, our organization aims
-                                to spread the spirit of innovation and
-                                creativity within computer science education.
-                                We’ve created HackGT: Dare to Venture to be an
-                                experience like no other - down to the smallest
-                                of embers. We want every participant to have
-                                fun, engage with new ideas, and create lasting,
-                                positive memories. With friends at your side,
-                                resources at every corner, and support around
-                                every turn, HackGT will empower you to unleash
-                                your inner trailblazer. We are incredibly
-                                excited to see the jaw-dropping projects and
-                                innovations that you have in store!
-                            </p>
-
-                            <p>
-                                On October 19th, come out and join us around the
-                                bonfire for one of our greatest adventures yet!
-                            </p>
-                        </div>
-                        <div class="text2">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
-                        </div>
-                        <div class="author">With &lt;3, the HackGTeam</div>
+                <est-scrolljack for="250vh" id="let">
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                    <picture>
+                        <source
+                            type="image/webp"
+                            srcset="assets/illos/letter.webp"
+                        />
+                        <img
+                            class="lax"
+                            data-lax-rotate="0 0, (-2*vh) 480"
+                            data-lax-anchor="#let"
+                            style="height: 90vh;"
+                            src="assets/illos/letter.png"
+                            alt="HackGT 7 logo"
+                        />
+                    </picture>
                     </div>
-                    <div class="illo2"></div>
-                    <div class="footer">
-                        <div class="letter__message">Stay in touch!</div>
-                        <est-footer></est-footer>
-                    </div>
+                </est-scrolljack>
+                <div style="height: 100vh;">
+                    This is the letter
                 </div>
             </est-section>
+            <est-footer></est-footer>
         </div>
 
         <script src="src/index.js"></script>
