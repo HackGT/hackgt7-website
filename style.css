@@ -122,11 +122,18 @@ est-nav {
 .title {
     font-size: 7rem;
     font-weight: bold;
+}
+
+.splash-container .title {
     animation: 1s cubic-bezier(0.22, 1, 0.36, 1) slidein, 1.5s ease-out fadein,
         1s ease-out 1s glow forwards;
 }
+
 .quote {
     font-size: 3.5rem;
+}
+
+.splash-container .quote {
     animation: 1.2s cubic-bezier(0.22, 1, 0.36, 1) slidein, 1.5s ease-out fadein,
         1s ease-out 1.2s glow forwards;
 }
@@ -168,6 +175,12 @@ est-register-btn {
     align-items: center;
 }
 
+.about-col-1 img {
+    height: 350px;
+    width: auto;
+    padding: 30px;
+}
+
 .about-col-2 {
     width: 150vw;
     padding-left: 5%;
@@ -191,7 +204,7 @@ est-register-btn {
 }
 
 .about-col-2__row-2 {
-    background: url('./assets/illos/about-long.png');
+    background: url("./assets/illos/about-long.png");
     background-size: contain;
     background-repeat: repeat-x;
     height: 40%;
@@ -243,7 +256,8 @@ est-register-btn {
 }
 
 .tracks__track {
-    margin-top: 60px; }
+    margin-top: 60px;
+}
 
 @media (min-width: 901px) {
 }
@@ -269,6 +283,7 @@ est-register-btn {
         display: flex;
         flex-direction: column;
         height: 80%;
+        padding-right: 55%;
     }
 
     .about-col-2__row-1__item {
@@ -296,6 +311,11 @@ est-register-btn {
     .date {
         font-size: 2rem;
     }
+
+    .about-col-1 img {
+        height: 300px;
+        width: auto;
+    }
 }
 
 @media (max-width: 450px) {
@@ -309,10 +329,16 @@ est-register-btn {
 
     .quote {
         font-size: 2rem;
+        text-align: center;
     }
 
     .date {
         font-size: 1.5rem;
+    }
+
+    .about-col-1 img {
+        height: 200px;
+        width: auto;
     }
 }
 
