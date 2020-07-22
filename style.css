@@ -54,10 +54,6 @@ h1 {
     margin: 0px;
 }
 
-p {
-    line-height: 1.75rem;
-}
-
 #mlh-logo-container {
     position: absolute;
     top: 0px;
@@ -117,6 +113,7 @@ est-nav {
 .title,
 .quote {
     font-family: var(--primary-font);
+    font-size: 3.5rem;
 }
 
 .title {
@@ -127,10 +124,6 @@ est-nav {
 .splash-container .title {
     animation: 1s cubic-bezier(0.22, 1, 0.36, 1) slidein, 1.5s ease-out fadein,
         1s ease-out 1s glow forwards;
-}
-
-.quote {
-    font-size: 3.5rem;
 }
 
 .splash-container .quote {
@@ -144,6 +137,12 @@ est-nav {
     color: white;
     padding: 30px 0px;
     animation: 1.4s cubic-bezier(0.22, 1, 0.36, 1) slidein, 1.5s ease-out fadein;
+}
+
+.header {
+    font-size: 3.5rem;
+    font-family: var(--primary-font);
+    text-align: center;
 }
 
 est-register-btn {
@@ -239,7 +238,7 @@ est-register-btn {
 
 .new-experience {
     text-align: center;
-    font-size: 4.75vw;
+    font-size: 4.75rem;
     font-weight: bold;
     font-family: var(--secondary-font);
     z-index: 900;
@@ -248,15 +247,27 @@ est-register-btn {
 
 /* i'm bad at names ;( haha nah man don't worry I like all your names */
 .center-row {
-    margin: 5%;
     display: flex;
-    gap: 25%;
     height: 80%;
     overflow: hidden;
+    padding: 0px 15%;
+    flex-wrap: wrap;
+}
+
+.center-row > div {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tracks__track {
     margin-top: 60px;
+}
+
+.tracks__track h1, .tracks__track p {
+    text-align: center;
 }
 
 @media (min-width: 901px) {
@@ -284,10 +295,28 @@ est-register-btn {
         flex-direction: column;
         height: 80%;
         padding-right: 55%;
+        font-size: 1rem; 
     }
 
     .about-col-2__row-1__item {
         padding: 30px 0px;
+    }
+
+    .about-col-2__row-1__item:last-child {
+        padding-right: 0px;
+    }
+
+    .about-col-2__row-2 {
+        height: 120px;
+        margin-left: -20%;
+    }
+    
+    .full-container {
+        height: fit-content;
+    }
+
+    .center-row > div {
+        width: 100%;
     }
 }
 
@@ -312,9 +341,17 @@ est-register-btn {
         font-size: 2rem;
     }
 
+    .header {
+        font-size: 3.25rem;
+    }
+
     .about-col-1 img {
         height: 300px;
         width: auto;
+    }
+
+    .new-experience {
+        font-size: 3rem;
     }
 }
 
@@ -336,9 +373,21 @@ est-register-btn {
         font-size: 1.5rem;
     }
 
+    .header {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
     .about-col-1 img {
         height: 200px;
         width: auto;
+    }
+
+    .new-experience {
+        font-size: 2.5rem;
     }
 }
 
