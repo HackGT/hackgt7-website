@@ -11,7 +11,8 @@
 }
 
 .est-faq__container__item--question {
-    background: grey;
+    background: #e4e4e4;
+    color: #777777;
     font-weight: bold;
     padding: 20px;
     cursor: pointer;
@@ -24,6 +25,7 @@
     padding: 0 20px;
     transition: max-height 0.3s ease-out;
     background: lightgrey;
+    color: #777777;
     position: relative;
     top: -20px;
     border-radius: 0px 0px 20px 20px;
@@ -32,7 +34,7 @@
 .est-faq__container__item--question::after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: white;
+    color: #777777;
     float: right;
     margin-left: 5px;
 }
