@@ -207,7 +207,6 @@
                             data-lax-opacity_large="0 0, (-1*vh) 1"
                             data-lax-translate-y_large="0 200, (-1*vh) 0"
                             data-lax-anchor="#tra"
-                            style="padding: 0px 15%;"
                         >
                             hacker tracks
                         </div>
@@ -225,7 +224,6 @@
                                             srcset="assets/illos/tracks-phone.webp"
                                         />
                                         <img
-                                            style="height: 350px; width: auto;"
                                             src="assets/illos/tracks-phone.png"
                                             alt="HackGT 7 logo"
                                         />
@@ -259,7 +257,6 @@
                                             srcset="assets/illos/tracks-earbuds.webp"
                                         />
                                         <img
-                                            style="height: 350px; width: auto;"
                                             src="assets/illos/tracks-earbuds.png"
                                             alt="HackGT 7 logo"
                                         />
@@ -284,22 +281,72 @@
                     </div>
                 </est-scrolljack>
             </est-section>
+
+            <!--
             <est-section name="schedule">
                 <div class="header">schedule</div>
                 <p style="font-size: 2.5rem; text-align: center;">
                     Coming soon...
                 </p>
             </est-section>
+            -->
 
             <est-section name="faqs">
-                <div class="header">faqs</div>
-                <est-faq></est-faq>
+                <div
+                    class="header lax"
+                    data-lax-translate-y_large="(0.2*vh) 0, (1*vh) 100"
+                    data-lax-opacity_large="(0.2*vh) 1, (1*vh) 0"
+                    data-lax-anchor="#faqs"
+                >
+                    faqs
+                </div>
+                <div class="faq-img-container">
+                    <picture>
+                        <source
+                            type="image/webp"
+                            srcset="assets/illos/whale.webp"
+                        />
+                        <img
+                            id="whale"
+                            class="lax"
+                            data-lax-translate-x_large="(0.25*vh) 0, (1*vh) 300"
+                            data-lax-opacity_large="(0.25*vh) 1, (1*vh) 0"
+                            data-lax-anchor="#faqs"
+                            src="assets/illos/whale.png"
+                            alt="HackGT 7 logo"
+                        />
+                    </picture>
+
+                    <picture>
+                        <source
+                            type="image/webp"
+                            srcset="assets/illos/bulb.webp"
+                        />
+                        <img
+                            id="bulb"
+                            class="lax"
+                            data-lax-translate-x_large="(0.25*vh) 0, (1*vh) (-300)"
+                            data-lax-opacity_large="(0.25*vh) 1, (1*vh) 0"
+                            data-lax-anchor="#faqs"
+                            src="assets/illos/bulb.png"
+                            alt="HackGT 7 logo"
+                        />
+                    </picture>
+                </div>
+                <div
+                    class="lax"
+                    data-lax-translate-y_large="(0.1*vh) 0, (1*vh) 200"
+                    data-lax-opacity_large="(0.1*vh) 1, (1*vh) 0"
+                    data-lax-anchor="#faqs"
+                >
+                    <est-faq></est-faq>
+                </div>
             </est-section>
-            <!--
-            <est-section name="letter" padding="0" margin="0">
-                <est-scrolljack for="250vh" id="let">
+
+            <est-section id="bottle-roll">
+                <est-scrolljack for="220vh" id="let">
                     <div
-                        style="display: flex; justify-content: center; align-items: center;"
+                        style="display: flex; justify-content: center; align-items: center; height: 100vh;"
                     >
                         <picture>
                             <source
@@ -307,21 +354,47 @@
                                 srcset="assets/illos/letter.webp"
                             />
                             <img
+                                id="bottle"
                                 class="lax"
-                                data-lax-rotate="0 0, (-2*vh) 480"
+                                data-lax-rotate_large="0 0, (-2*vh) 480"
+                                data-lax-opacity="0 1, (-1*vh) 1, (-2*vh) 0"
                                 data-lax-anchor="#let"
-                                style="height: 90vh;"
                                 src="assets/illos/letter.png"
                                 alt="HackGT 7 logo"
                             />
                         </picture>
                     </div>
                 </est-scrolljack>
-                <div style="height: 100vh;">
-                    This is the letter
+            </est-section>
+
+            <est-section name="letter">
+                <div class="letter-title lax" data-lax-preset="coolappear">
+                    DEAR HACKER
+                </div>
+                <div class="letter lax" data-lax-preset="coolappear">
+                    <p>
+                        As a major player in the field of computer science
+                        outreach, HackGT throws events to show the world the
+                        beauty of STEAM. Through large-scale collegiate
+                        hackathons and smaller, individualized workshops, our
+                        organization aims to spread the spirit of innovation and
+                        creativity within computer science education. We’ve
+                        created HackGT: Dare to Venture to be an experience like
+                        no other - down to the smallest of embers. We want every
+                        participant to have fun, engage with new ideas, and
+                        create lasting, positive memories. With friends at your
+                        side, resources at every corner, and support around
+                        every turn, HackGT will empower you to unleash your
+                        inner trailblazer. <br /><br />
+
+                        We are incredibly excited to see the jaw-dropping
+                        projects and innovations that you have in store! On
+                        October 19th, come out and join us around the bonfire
+                        for one of our greatest adventures yet!
+                    </p>
+                    <div class="signature">With &lt;3, The HackGTeam</div>
                 </div>
             </est-section>
-            -->
             <est-footer></est-footer>
         </div>
 

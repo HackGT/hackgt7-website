@@ -64,6 +64,7 @@ h1 {
 #mlh-logo-container img {
     height: 120px;
     width: 70px;
+    padding: 0px;
 }
 
 /* TODO remove this */
@@ -103,6 +104,7 @@ est-nav {
 .splash__illo {
     height: 700px;
     animation: 1s cubic-bezier(0.22, 1, 0.36, 1) slidein;
+    padding: 0px;
 }
 
 .splash__main {
@@ -174,7 +176,7 @@ est-register-btn {
     align-items: center;
 }
 
-.about-col-1 img {
+img {
     height: 350px;
     width: auto;
     padding: 30px;
@@ -266,8 +268,60 @@ est-register-btn {
     margin-top: 60px;
 }
 
-.tracks__track h1, .tracks__track p {
+.tracks__track h1,
+.tracks__track p {
     text-align: center;
+}
+
+.letter-title {
+    font-size: 5.5rem;
+    font-family: var(--primary-font);
+    text-shadow: 0px 0px 30px white;
+    text-align: center;
+}
+
+.letter {
+    padding: 30px 10%;
+}
+
+.letter p {
+    font-size: 1.25rem;
+    padding-bottom: 40px;
+}
+
+.signature {
+    text-align: right;
+    font-size: 2rem;
+}
+
+.faq-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#bulb,
+#whale {
+    position: absolute;
+    height: auto;
+}
+
+#bulb {
+    top: 75px;
+    left: -200px;
+    width: 150px;
+}
+
+#whale {
+    top: -150px;
+    right: -200px;
+    width: 200px;
+    transform: rotate(15deg);
+}
+
+#bottle {
+    height: 70vh;
 }
 
 @media (min-width: 901px) {
@@ -295,7 +349,7 @@ est-register-btn {
         flex-direction: column;
         height: 80%;
         padding-right: 55%;
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
     .about-col-2__row-1__item {
@@ -310,13 +364,25 @@ est-register-btn {
         height: 120px;
         margin-left: -20%;
     }
-    
+
     .full-container {
         height: fit-content;
     }
 
     .center-row > div {
         width: 100%;
+    }
+
+    #whale {
+        display: none;
+    }
+
+    #bottle-roll {
+        display: none;
+    }
+
+    #bulb {
+        position: initial;
     }
 }
 
@@ -345,13 +411,25 @@ est-register-btn {
         font-size: 3.25rem;
     }
 
-    .about-col-1 img {
+    img {
         height: 300px;
         width: auto;
     }
 
     .new-experience {
         font-size: 3rem;
+    }
+
+    .letter-title {
+        font-size: 4rem;
+    }
+
+    .letter p {
+        font-size: 1rem;
+    }
+
+    .signature {
+        font-size: 1.25rem;
     }
 }
 
@@ -381,13 +459,21 @@ est-register-btn {
         font-size: 1.75rem;
     }
 
-    .about-col-1 img {
+    img {
         height: 200px;
         width: auto;
     }
 
     .new-experience {
         font-size: 2.5rem;
+    }
+
+    .letter-title {
+        font-size: 3rem;
+    }
+
+    .letter p {
+        font-size: 1rem;
     }
 }
 
