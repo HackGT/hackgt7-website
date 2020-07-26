@@ -20,10 +20,9 @@ lax.addPreset("coolappear", () => {
     return {
         "data-lax-translate-y_large": "(0.1*vh) 0, (0.5*vh) 200",
         "data-lax-opacity_large": "100 1, (0.5*vh) 0",
-        "data-lax-anchor": "self" 
-    }
+        "data-lax-anchor": "self"
+    };
 });
-
 
 // use smooth scroll polyfill
 smoothscroll.polyfill();
@@ -53,9 +52,33 @@ window.addEventListener("resize", function() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
+        const dest = document.querySelector(this.getAttribute("href"));
+        let amt = dest.offsetTop;
+        if (dest.hasAttribute("breakpoint")) {
+            const vw = Math.max(
+                document.documentElement.clientWidth || 0,
+                window.innerWidth || 0
+            );
+            const vh = Math.max(
+                document.documentElement.clientHeight || 0,
+                window.innerHeight || 0
+            );
+            const breakpoint = parseInt(dest.getAttribute("breakpoint"));
+            if (vw >= breakpoint) {
+                const extra = dest.getAttribute("extra-scroll");
+                const type = extra.slice(-2);
+                let multiplier = 1;
+                if (type === "vw") {
+                    multiplier = vw;
+                } else if (type === "vh") {
+                    multiplier = vh;
+                }
+                amt += parseInt(dest.getAttribute("extra-scroll")) * multiplier;
+            }
+        }
+        window.scroll({
+            top: amt,
             behavior: "smooth"
         });
     });
 });
-
