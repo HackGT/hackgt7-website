@@ -37,7 +37,8 @@
         <est-nav></est-nav>
 
         <div class="content">
-            <est-section margin="0%">
+            <est-section padding="0px"></est-section>
+            <est-section name="home" margin="0%">
                 <div id="mlh-logo-container">
                     <a
                         rel="noopener"
@@ -81,12 +82,13 @@
                     <div class="about-container-sentinel">
                         <div
                             class="lax about-container"
-                            data-lax-translate-x_large="0 0, (-1*vw) 0, (-3.4*vw) (-1*vw)"
+                            data-lax-translate-x_large="0 0, (-1*vw) 0, (-3.4*vw) (-1.1*vw)"
                             data-lax-anchor="#parent"
                         >
                             <div class="about-col-1">
                                 <div
                                     class="lax header"
+                                    style="font-size: 2.95rem;"
                                     data-lax-opacity_large="0 0, (-0.6*vw) 1"
                                     data-lax-translate-y_large="0 200, (-0.4*vw) 0"
                                     data-lax-anchor="#parent"
@@ -103,6 +105,7 @@
                                             class="lax"
                                             src="assets/illos/about-game-cube.png"
                                             alt="HackGT 7 logo"
+                                            style="height: 400px;"
                                             data-lax-opacity_large="0 0, (-0.6*vw) 1"
                                             data-lax-translate-y_large="0 200, (-0.5*vw) 0"
                                             data-lax-anchor="#parent"
@@ -172,7 +175,7 @@
                                 </div>
                                 <div
                                     class="lax about-col-2__row-2"
-                                    data-lax-translate-x_large="0 (0.5*vw), (-3.4*vw) (-0.5*vw)"
+                                    data-lax-translate-x_large="0 (0.5*vw), (-3.4*vw) (-0.2*vw)"
                                     data-lax-translate-y_large="0 0, (-3.5*vw) 0, (-4*vw) (-0.5*vh)"
                                     data-lax-anchor="#parent"
                                 ></div>
@@ -232,7 +235,7 @@
                                 <div
                                     class="lax tracks__track"
                                     data-lax-translate-y_large="0 (0.25*vw), (-2*vh) (0.25*vw), (-3*vh) 0"
-                                    data-lax-opacity_large="0 0, (-4*vh) 1"
+                                    data-lax-opacity_large="0 0, (-3.5*vh) 1"
                                     data-lax-anchor="#tra"
                                 >
                                     <h1>general</h1>
@@ -265,7 +268,7 @@
                                 <div
                                     class="lax tracks__track"
                                     data-lax-translate-y_large="0 (0.25*vw), (-2*vh) (0.25*vw), (-3*vh) 0"
-                                    data-lax-opacity_large="0 0, (-4*vh) 1"
+                                    data-lax-opacity_large="0 0, (-3.5*vh) 1"
                                     data-lax-anchor="#tra"
                                 >
                                     <h1>emerging</h1>
@@ -298,7 +301,7 @@
                     data-lax-opacity_large="(0.2*vh) 1, (1*vh) 0"
                     data-lax-anchor="#faqs"
                 >
-                    faqs
+                faq<span class="date">s</span>
                 </div>
                 <div class="faq-img-container">
                     <picture>
@@ -344,22 +347,22 @@
             </est-section>
 
             <est-section id="bottle-roll">
-                <est-scrolljack for="220vh" id="let">
+                <est-scrolljack for="300vh" id="let">
                     <div
                         style="display: flex; justify-content: center; align-items: center; height: 100vh;"
                     >
                         <picture>
                             <source
                                 type="image/webp"
-                                srcset="assets/illos/letter.webp"
+                                srcset="assets/illos/fullAsset.png"
                             />
                             <img
                                 id="bottle"
                                 class="lax"
-                                data-lax-rotate_large="0 0, (-2*vh) 480"
                                 data-lax-opacity="0 1, (-1*vh) 1, (-2*vh) 0"
+                                data-lax-scale_large="0 1, (-1*vh) 1, (-2*vh) 4"
                                 data-lax-anchor="#let"
-                                src="assets/illos/letter.png"
+                                src="assets/illos/fullAsset.png"
                                 alt="HackGT 7 logo"
                             />
                         </picture>
@@ -392,7 +395,7 @@
                         October 19th, come out and join us around the bonfire
                         for one of our greatest adventures yet!
                     </p>
-                    <div class="signature">With &lt;3, The HackGTeam</div>
+                    <div class="signature">With &hearts;, The HackGTeam</div>
                 </div>
             </est-section>
             <est-footer></est-footer>

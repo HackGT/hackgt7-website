@@ -63,6 +63,7 @@ class EstFaq extends HTMLElement {
         } else {
           answer.style.maxHeight = answer.scrollHeight + 'px';
         }
+        answer.classList.toggle('est-faq__container__item--answer--active');
       });
 
       const answer = document.createElement('div');

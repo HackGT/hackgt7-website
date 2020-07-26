@@ -41,4 +41,9 @@ est-footer footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--footer-color);
+}
+
+.est-footer__gh-issue a {
+  color: var(--footer-color) !important;
 }

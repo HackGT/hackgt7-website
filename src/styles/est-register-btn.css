@@ -5,9 +5,9 @@
     font-size: 1.25rem;
     font-family: var(--secondary-font);
     font-weight: 900;
-    background: rgb(53, 135, 117, 0.6);
+    background: rgba(255, 255, 255, 0.3);
     border: 0px solid white;
-    box-shadow: 0 0 0 3px var(--color-5);
+    box-shadow: 0 0 10px 2px #eaeaea;
     cursor: pointer;
     transition: all 0.2s ease-out,
         filter 0.2s ease-in;
@@ -15,12 +15,10 @@
 }
 
 button.est-register-btn:hover {
-    filter: brightness(1.25);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 button.est-register-btn:active {
-    border: 9px solid black;
-    padding: 12px;
-    font-size: 1.15rem;
+    box-shadow: none;
 }
 
