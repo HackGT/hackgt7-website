@@ -51,6 +51,14 @@ h1 {
     margin: 0px;
 }
 
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
 #mlh-logo-container {
     position: absolute;
     top: 0px;
