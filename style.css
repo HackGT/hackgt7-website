@@ -372,12 +372,6 @@ est-footer {
 @media (min-width: 901px) {
 }
 
-@media (min-height: 701px) {
-}
-
-@media (max-height: 700px) {
-    }
-
 @media (max-width: 900px) {
     .splash__illo {
         height: 600px;

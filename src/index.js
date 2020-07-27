@@ -10,16 +10,32 @@ import "./components/est-register-btn.js";
 import lax from "lax.js";
 import smoothscroll from "smoothscroll-polyfill";
 
+const gopher = `
+                     ,______________         
+              _,,_,*^____      _____\`\`*g*\"*, 
+             / __/ /'     ^.  /      \ ^@q   f 
+            [  @f | @))    |  | @))   l  0 _/  
+             \\\`/   \\~____ / __ \\_____/    \\   
+              |           _l__l_           I   
+              }          [______]           I  
+              ]            | | |            |  
+              ]             ~ ~             |  
+              |                            |   
+               |                           |
+        gophers were not involved in the making of this website ;)
+`;
+
+console.log(gopher);
 // styled console log
 const c =
-    "font-size: 4rem; color: #11cfff; text-shadow: 5px 5px blue; font-weight: bold;";
-console.log("%c🌊 konnichiwa!", c);
+    "font-size: 4rem; color: #96BFB8; text-shadow: 5px 5px #6C8BA8; font-weight: bold;";
+console.log("%c🌊 REIMAGINE REALITY", c);
 
 // add lax preset
 lax.addPreset("coolappear", () => {
     return {
         "data-lax-anchor": "self",
-        "data-lax-opacity": "(0.75*vh) 0, (0.25*vh) 1",
+        "data-lax-opacity": "(0.75*vh) 0, (0.25*vh) 1"
     };
 });
 

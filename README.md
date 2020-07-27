@@ -1,3 +1,3 @@
 # hackgt7-website
 
-🚧 homosapiens are working on making this website 🚧
+🎉 check it out => [https://2020.hack.gt](https://2020.hack.gt)
