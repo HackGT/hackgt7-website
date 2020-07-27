@@ -5,6 +5,7 @@ const query = `
     allFAQs {
         question
         answer
+        index
     }
 }`;
 
@@ -27,7 +28,7 @@ class EstFaq extends HTMLElement {
 
     fetchCms(query)
         .then(
-          (data) => this._genHtml(data.allFAQs)          
+          (data) => this._genHtml(data.allFAQs)      
         )
   }
 
@@ -35,6 +36,7 @@ class EstFaq extends HTMLElement {
    * @typedef {Object} Faq
    * @property {String} question
    * @property {String} answer
+   * @property {Integer} index
    */
 
   /**
@@ -46,7 +48,11 @@ class EstFaq extends HTMLElement {
     const container = document.createElement('div');
     container.classList.add('est-faq');
 
+    var faqsInOrder = []
     this.faqs.forEach((faq) => {
+      faqsInOrder.splice((faq.index - 1), 0, faq);
+    });
+    faqsInOrder.forEach((faq) => {
       const faqContainer = document.createElement('div');
       faqContainer.classList.add('est-faq__container');
 
@@ -77,7 +83,7 @@ class EstFaq extends HTMLElement {
       faqContainer.appendChild(answer);
 
       container.appendChild(faqContainer);
-    });
+    })
     this.appendChild(container);
   }
 }
