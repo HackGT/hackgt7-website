@@ -86,7 +86,7 @@ est-faq {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .est-faq {
         font-size: 0.70rem;
     }
