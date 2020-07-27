@@ -362,6 +362,8 @@ img {
 
 #bottle {
     height: 85vh;
+    position: relative;
+    z-index: 700;
 }
 
 @media (min-width: 901px) {
