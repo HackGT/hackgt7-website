@@ -1,7 +1,9 @@
 const template = document.createElement('template');
 template.innerHTML = `
-<button class="est-register-btn"> 
-</button>
+<a href="https://registration.hack.gt" target="_black" rel="noopener">
+    <button class="est-register-btn"> 
+    </button>
+</a>
 `;
 
 /**
@@ -38,12 +40,7 @@ class EstRegisterBtn extends HTMLElement {
     const el = template.content.cloneNode(true);
     const text = this.getAttribute('text') ?
       this.getAttribute('text') : 'Register';
-    const link = document.createElement("a");
-    link.href = "https://registration.hack.gt";
-    link.innerHTML = text;
-    link.target = "_blank";
-    link.rel = "noopener";
-    el.querySelector('button').appendChild(link);
+    el.querySelector('button').innerHTML = text;
     this.appendChild(el);
   }
 }

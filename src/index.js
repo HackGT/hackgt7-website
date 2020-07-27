@@ -39,11 +39,10 @@ window.onload = function() {
     };
 
     window.requestAnimationFrame(updateLax);
+    window.addEventListener("resize", function() {
+        lax.updateElements();
+    });
 };
-
-window.addEventListener("resize", function() {
-    lax.updateElements();
-});
 
 // https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
 // Used for smooth scrolling

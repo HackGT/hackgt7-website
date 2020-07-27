@@ -60,8 +60,22 @@ est-faq {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+@media (max-width: 600px) {
+    .est-faq {
+        font-size: 0.75rem;
+    }
+}
+
 @media (max-width: 400px) {
     .est-faq {
-        font-size: 0.85rem;
+        font-size: 0.70rem;
+    }
+
+    .est-faq__container__item--question::after {
+        content: "";
+    }
+
+    .est-faq__container__item--question--active:after {
+        content: "";
     }
 }

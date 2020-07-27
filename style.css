@@ -181,6 +181,10 @@ img {
     padding: 30px;
 }
 
+.game-cube {
+    height: 400px;
+}
+
 .about-col-2 {
     width: 150vw;
     padding-left: 5%;
@@ -235,6 +239,9 @@ img {
     height: 100vh;
     position: absolute;
     width: 100vw;
+    /* background: url("./assets/illos/starwars.png"); */
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .new-experience {
@@ -246,10 +253,23 @@ img {
     position: relative;
 }
 
+#starwars {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#starwars img {
+    height: 100vh;
+    width: auto;
+}
+
 /* i'm bad at names ;( haha nah man don't worry I like all your names */
 .center-row {
     display: flex;
-    height: 80%;
     overflow: hidden;
     padding: 0px 15%;
     flex-wrap: wrap;
@@ -404,6 +424,12 @@ img {
 
     #bulb {
         position: initial;
+        height: 150px;
+        width: auto;
+    }
+
+    .letter-imgs {
+        display: none;
     }
 }
 
@@ -435,6 +461,12 @@ img {
     img {
         height: 300px;
         width: auto;
+    }
+
+    .game-cube {
+        height: 350px;
+        width: auto;
+
     }
 
     .new-experience {
@@ -482,6 +514,11 @@ img {
 
     img {
         height: 200px;
+        width: auto;
+    }
+
+    .game-cube {
+        height: 250px;
         width: auto;
     }
 
