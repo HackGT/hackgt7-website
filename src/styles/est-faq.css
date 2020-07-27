@@ -37,32 +37,31 @@ est-faq {
     color: white;
     position: relative;
     top: -32px;
-    border-radius: 40px 40px 40px 40px;
+    border-radius: 28px;
     z-index: 900;
 }
 
 .est-faq__container__item--question::after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777777;
     float: right;
     margin-left: 5px;
 }
 
-.est-faq__container__item--question:hover, .est-faq__container__item--question--active {
-}
-
-.est-faq__container__item--question--active {
-    margin-bottom: 40px;
-}
-
 .est-faq__container__item--answer--active {
-    margin-top: -55px;
-    margin-right: 0px;
-    padding-top: 35px;
+    position: relative;
+    top: -50px;
+    padding-top: 45px;
+    margin-bottom: -40px;
 }
 
 .est-faq__container__item--question--active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+@media (max-width: 400px) {
+    .est-faq {
+        font-size: 0.85rem;
+    }
+}

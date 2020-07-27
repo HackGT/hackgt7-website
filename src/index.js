@@ -82,3 +82,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+const letterIcon = document.getElementById("letter-icon");
+const letterLink = document.querySelector("[href='#letter']");
+letterLink.innerHTML = "";
+letterLink.appendChild(letterIcon);

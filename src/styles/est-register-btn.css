@@ -22,3 +22,15 @@ button.est-register-btn:active {
     box-shadow: none;
 }
 
+button.est-register-btn:focus {
+    outline: none;
+}
+
+.est-register-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.est-register-btn a:visited {
+    color: white;
+}

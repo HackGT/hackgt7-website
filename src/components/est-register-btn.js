@@ -38,7 +38,12 @@ class EstRegisterBtn extends HTMLElement {
     const el = template.content.cloneNode(true);
     const text = this.getAttribute('text') ?
       this.getAttribute('text') : 'Register';
-    el.querySelector('button').innerHTML = text;
+    const link = document.createElement("a");
+    link.href = "https://registration.hack.gt";
+    link.innerHTML = text;
+    link.target = "_blank";
+    link.rel = "noopener";
+    el.querySelector('button').appendChild(link);
     this.appendChild(el);
   }
 }
