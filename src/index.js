@@ -18,9 +18,8 @@ console.log("%c🌊 konnichiwa!", c);
 // add lax preset
 lax.addPreset("coolappear", () => {
     return {
-        "data-lax-translate-y_large": "(0.1*vh) 0, (0.5*vh) 200",
-        "data-lax-opacity_large": "100 1, (0.5*vh) 0",
-        "data-lax-anchor": "self"
+        "data-lax-anchor": "self",
+        "data-lax-opacity": "(0.75*vh) 0, (0.25*vh) 1",
     };
 });
 
