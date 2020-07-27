@@ -441,6 +441,11 @@ est-footer {
         display: none;
     }
 
+    .faq-img-container {
+        position: relative;
+        height: fit-content;
+    }
+
     #bulb {
         position: initial;
         height: 150px;
