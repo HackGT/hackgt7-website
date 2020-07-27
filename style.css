@@ -363,6 +363,12 @@ img {
     z-index: 700;
 }
 
+est-footer {
+    display: block;
+    z-index: 1000;
+    position: relative;
+}
+
 @media (min-width: 901px) {
 }
 
