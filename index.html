@@ -184,7 +184,7 @@
             </est-section>
 
             <est-section margin="0px">
-                <est-scrolljack for="325vh">
+                <est-scrolljack for="325vh" breakpoint="900px">
                     <div class="new-experience-container" id="exp">
                         <!--
                         <div
@@ -203,8 +203,8 @@
                         -->
                         <div
                             class="lax new-experience"
-                            data-lax-scale="0 1, (-0.5*vh) 1, (-0.7*vh) 1, (-4*vh) 50"
-                            data-lax-opacity="0 1, (-3.25*vh) 0"
+                            data-lax-scale_large="0 1, (-0.5*vh) 1, (-0.7*vh) 1, (-4*vh) 50"
+                            data-lax-opacity_large="0 1, (-3.25*vh) 0"
                             data-lax-anchor="self"
                         >
                             Welcome to a new experience
@@ -297,14 +297,16 @@
                 </est-scrolljack>
             </est-section>
 
-            <!--
             <est-section name="schedule">
-                <div class="header">schedule</div>
-                <p style="font-size: 2.5rem; text-align: center;">
-                    Coming soon...
-                </p>
+                <div
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 120px;"
+                >
+                    <div class="header">schedule</div>
+                    <h1 style="text-align: center;">
+                        Coming soon...
+                    </h1>
+                </div>
             </est-section>
-            -->
 
             <est-section name="faqs" id="faqs" padding="120px 0px 0px 0px">
                 <div
@@ -355,6 +357,17 @@
                     data-lax-anchor="#faqs"
                 >
                     <est-faq></est-faq>
+                </div>
+            </est-section>
+
+            <est-section name="sponsors">
+                <div
+                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; padding-top: 120px;"
+                >
+                    <div class="header">sponsors</div>
+                    <h1 style="text-align: center;">
+                        Coming soon...
+                    </h1>
                 </div>
             </est-section>
 
@@ -426,9 +439,9 @@
                         data-lax-opacity_large="100 1, (0.4*vh) 0"
                         data-lax-anchor="self"
                     >
-                    <est-data>
-                        <div data-block="letter-from-the-team"></div>
-                    </est-data>
+                        <est-data>
+                            <div data-block="letter-from-the-team"></div>
+                        </est-data>
                         <div class="signature">
                             With &hearts;, The HackGTeam
                         </div>

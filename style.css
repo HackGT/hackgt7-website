@@ -217,7 +217,6 @@ img {
 
 .full-container {
     padding-top: 120px;
-    height: 100vh;
 }
 
 .scroll-cue {
@@ -488,6 +487,10 @@ img {
 }
 
 @media (max-width: 450px) {
+    body {
+        --content-margin: 0 10%;
+    }
+
     .splash__illo {
         height: 300px;
     }
@@ -527,12 +530,24 @@ img {
         font-size: 2.5rem;
     }
 
+    .letter-container {
+        padding: 5%;
+    }
+
     .letter-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .letter p {
         font-size: 1rem;
+    }
+
+    .new-experience-container {
+        position: relative;
+    }
+
+    .center-row {
+        padding: 5%;
     }
 }
 

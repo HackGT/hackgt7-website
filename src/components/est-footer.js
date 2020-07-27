@@ -51,6 +51,7 @@ class EstFooter extends HTMLElement {
     for (const social of socials) {
       const socialItem = document.createElement('a');
       socialItem.href = social.url;
+      console.log(social.url);
       socialItem.target = '_blank';
       socialItem.rel = 'noopener';
 
