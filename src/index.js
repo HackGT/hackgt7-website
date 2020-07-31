@@ -106,8 +106,6 @@ const signupModal = document.querySelector("#signup-modal");
 const signupBtn = document.querySelector("#newsletter");
 const closeModal = document.querySelector("#close-modal");
 
-console.log(signupBtn, signupModal, closeModal);
-
 signupBtn.addEventListener("click", () => {
     signupModal.style.display = "block";
 });
