@@ -97,6 +97,10 @@ a:visited {
     .title {
         font-size: 4rem;
     }
+
+    .header {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 378px) {
