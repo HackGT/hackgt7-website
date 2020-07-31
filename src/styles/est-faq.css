@@ -42,11 +42,13 @@ est-faq {
 }
 
 .est-faq__container__item--question::after {
-    content: "\02795"; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
+    content: "+";
+    font-size: 1.5rem;
     color: #777777;
-    float: right;
-    margin-left: 5px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: white;
 }
 
 .est-faq__container__item--answer--active {
@@ -64,7 +66,12 @@ est-faq {
 }
 
 .est-faq__container__item--question--active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    font-size: 2rem;
+    content: "-";
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    color: white;
 }
 
 @media (max-width: 600px) {
@@ -77,12 +84,6 @@ est-faq {
         top: -65px;
         margin-bottom: -45px;
         margin-top: 20px;
-    }
-
-    .est-faq__container__item--answer--active--first {
-        padding-top: 60px;
-        top: -60px;
-        margin-bottom: -45px;
     }
 }
 
@@ -99,16 +100,10 @@ est-faq {
         content: "";
     }
 
-    .est-faq__container__item--answer--active{
+    .est-faq__container__item--answer--active, .est-faq__container__item--answer--active--first {
         padding-top: 50px;
         top: -65px;
         margin-bottom: -45px;
         margin-top: 20px;
-    }
-
-    .est-faq__container__item--answer--active--first {
-        padding-top: 60px;
-        top: -60px;
-        margin-bottom: -45px;
     }
 }
