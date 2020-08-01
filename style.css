@@ -544,7 +544,7 @@ est-footer {
     }
 
     .about-container-sentinel {
-        height: fit-content;
+        height: 200vh;
     }
 
     .about-container {
@@ -554,7 +554,8 @@ est-footer {
         padding-top: 0px;
     }
 
-    .about-col-1 {
+    .about-col-1 {        
+        height: 100%;
         width: 100%;
     }
 
