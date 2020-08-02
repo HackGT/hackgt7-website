@@ -1,8 +1,8 @@
 .est-register-btn {
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     border-radius: 50px;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-family: var(--secondary-font);
     font-weight: 900;
     background: rgba(255, 255, 255, 0.3);
@@ -11,7 +11,9 @@
     cursor: pointer;
     transition: all 0.2s ease-out,
         filter 0.2s ease-in;
-    color: white
+    color: white;
+    text-align: center;
+    display: inline-block;
 }
 
 button.est-register-btn:hover {
@@ -33,4 +35,16 @@ button.est-register-btn:focus {
 
 .est-register-btn a:visited {
     color: white;
+}
+
+#newsletter {
+    width: 80%;
+    /* margin-left: 20px; */
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+#btns {
+    text-align: center;
 }

@@ -1,9 +1,14 @@
 const template = document.createElement('template');
 template.innerHTML = `
+<div id="btns">
 <a href="https://registration.hack.gt" target="_black" rel="noopener">
     <button class="est-register-btn"> 
     </button>
 </a>
+<button class="est-register-btn" id="newsletter"> 
+Sign Up for our Newsletter!
+</button>
+</div>
 `;
 
 /**
