@@ -42,8 +42,9 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    margin: 20px 200px 20px 200px;
-    padding: 20px;
+    margin: 0px;
+    /*margin: 20px 200px 20px 200px;
+    padding: 20px;*/
     font-family: var(--secondary-font);
     overflow-x: hidden;
 }
@@ -77,6 +78,12 @@ li {
 
 .apply-questions {
     margin: 20px 20px 200px 20px;
+}
+
+.content {
+    /*margin: 20px 200px 20px 200px;*/
+    padding: 5% 15% 5% 15%;
+/*    padding: 20px;*/
 }
 
 a:link {
