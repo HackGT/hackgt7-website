@@ -118,19 +118,19 @@ class EstNav extends HTMLElement {
     });
     const currentLink = this._targets[this.sectionIndex].link;
     const newLink = this._targets[i].link;
-
+    
     /* BEGIN style nav */
 
     // NOTE: the links can be null because of sections not on the nav bar
     this.nav.style.background = this._targets[i].section
         .getAttribute('background');
-
+    
     if (currentLink) {
-      currentLink.classList.toggle('est-nav__current');
+      currentLink.classList.remove('est-nav__current');
     }
 
     if (newLink) {
-      newLink.classList.toggle('est-nav__current');
+      newLink.classList.add('est-nav__current');
     }
 
     /* END style nav */
