@@ -108,7 +108,6 @@ class EstNav extends HTMLElement {
      * the nav bar
      */
   _setSectionIndex(i) {
-      console.log(i);
     const event = new CustomEvent('change-section', {
         detail: {
             section: this._targets[i].section,
@@ -120,8 +119,6 @@ class EstNav extends HTMLElement {
     const currentLink = this._targets[this.sectionIndex].link;
     const newLink = this._targets[i].link;
     
-      console.log(currentLink);
-      console.log(newLink);
     /* BEGIN style nav */
 
     // NOTE: the links can be null because of sections not on the nav bar
