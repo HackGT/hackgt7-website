@@ -99,17 +99,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const letterIcon = document.getElementById("letter-icon");
 const letterLink = document.querySelector("[href='#letter']");
-letterLink.innerHTML = "";
-letterLink.appendChild(letterIcon);
+if (letterLink !== null) {
+    letterLink.innerHTML = "";
+    letterLink.appendChild(letterIcon);
+}
+
 
 const signupModal = document.querySelector("#signup-modal");
 const signupBtn = document.querySelector("#newsletter");
 const closeModal = document.querySelector("#close-modal");
-
-signupBtn.addEventListener("click", () => {
+if (signupBtn !==null) {
+    signupBtn.addEventListener("click", () => {
     signupModal.style.display = "block";
 });
+}
 
-closeModal.addEventListener("click", () => {
+if (closeModal !== null) {
+    closeModal.addEventListener("click", () => {
     signupModal.style.display = "none";
 });
+}
+
+
