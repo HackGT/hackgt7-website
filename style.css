@@ -427,6 +427,10 @@ img {
     width: 100%
 }
 
+.mc-field-group option {
+    color: black;
+}
+
 .expand input {
     padding: 12px;
     outline: none;
