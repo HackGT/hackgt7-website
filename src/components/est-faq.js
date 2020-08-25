@@ -2,7 +2,7 @@ import {fetchCms} from '../cms.js';
 
 const query = `
 {
-    allFAQs {
+    allFAQs (where: { hackathon: { name: "HackGT 7" } }) {
         question
         answer
         index
