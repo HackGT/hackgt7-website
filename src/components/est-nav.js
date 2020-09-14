@@ -122,16 +122,16 @@ class EstNav extends HTMLElement {
     /* BEGIN style nav */
 
     // NOTE: the links can be null because of sections not on the nav bar
-    this.nav.style.background = this._targets[i].section
-        .getAttribute('background');
-    
-    if (currentLink) {
-      currentLink.classList.remove('est-nav__current');
-    }
+    // this.nav.style.background = this._targets[i].section
+    //     .getAttribute('background');
+    // 
+    // if (currentLink) {
+    //   currentLink.classList.remove('est-nav__current');
+    // }
 
-    if (newLink) {
-      newLink.classList.add('est-nav__current');
-    }
+    // if (newLink) {
+    //   newLink.classList.add('est-nav__current');
+    // }
 
     /* END style nav */
 
