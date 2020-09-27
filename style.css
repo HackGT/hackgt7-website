@@ -87,6 +87,14 @@ est-nav {
     overflow: hidden;
 }
 
+.banner {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    height: 2vh;
+    background-color: white;
+}
+
 .splash__item {
 }
 
@@ -113,6 +121,12 @@ est-nav {
 .quote {
     font-family: var(--primary-font);
     font-size: 3.5rem;
+}
+
+.registration {
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+    padding-bottom: 15px;
 }
 
 .title {

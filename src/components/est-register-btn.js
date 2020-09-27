@@ -6,7 +6,7 @@ template.innerHTML = `
     </button>
 </a>
 <button class="est-register-btn" id="newsletter"> 
-Sign Up for our Newsletter!
+Sign up for our newsletter!
 </button>
 </div>
 `;
@@ -44,7 +44,7 @@ class EstRegisterBtn extends HTMLElement {
 
     const el = template.content.cloneNode(true);
     const text = this.getAttribute('text') ?
-      this.getAttribute('text') : 'Register';
+      this.getAttribute('text') : 'Registration portal';
     el.querySelector('button').innerHTML = text;
     this.appendChild(el);
   }
