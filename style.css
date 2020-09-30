@@ -360,10 +360,35 @@ img {
     flex: 0 1 150px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
-.tier > img {
-    height: 50px;
+.tier a {
+    text-decoration: none;
+}
+
+.tier-1 img {
+    height: 75px;
+}
+
+.tier-2 img {
+    height: 67px;
+}
+
+.tier-3 img {
+    height: 45px;
+}
+
+.tier-4 img {
+    height: 30px;
+}
+
+.tier img {
+    transition: transform 0.5s;
+}
+
+.tier img:hover {
+    transform: scale(1.1, 1.1);
 }
 
 #letter-icon {
@@ -411,7 +436,7 @@ img {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #658AAE;
+    background-color: #658aae;
     padding: 20px;
     margin: 20px auto;
     border-radius: 50px;
@@ -420,7 +445,7 @@ img {
 }
 
 #mc_embed_signup {
-    background: #658AAE;
+    background: #658aae;
     clear: left;
     font: 14px var(--secondary-font);
     color: white;
@@ -441,7 +466,7 @@ img {
 
 .mc-field-group {
     margin: 10px;
-    width: 100%
+    width: 100%;
 }
 
 .mc-field-group option {
@@ -473,18 +498,21 @@ select:focus {
     padding-top: 0px;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: white;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: white;
-  }
+}
 
 .mc-field-group select {
     padding: 12px;
@@ -513,8 +541,7 @@ select:focus {
     border: 0px solid white;
     box-shadow: 0 0 10px 2px #eaeaea;
     cursor: pointer;
-    transition: all 0.2s ease-out,
-        filter 0.2s ease-in;
+    transition: all 0.2s ease-out, filter 0.2s ease-in;
     color: white;
     margin-top: 15px;
 }
@@ -542,7 +569,7 @@ select:focus {
 }
 
 .clear input {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     border-radius: 15px;
     padding: 10px;
     border-color: white;
