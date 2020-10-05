@@ -50,6 +50,7 @@ class EstSchedule extends HTMLElement {
    */
   _genHtml(events) {
     this.events = events;
+    console.log(this.events)
     this.events.forEach((event) => {
       const e = {
         time: event.startTime,

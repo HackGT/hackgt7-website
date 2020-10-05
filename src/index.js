@@ -5,6 +5,7 @@ import "./components/est-nav.js";
 import "./components/est-scrolljack.js";
 import "./components/est-section.js";
 import "./components/est-select.js";
+import "./components/est-schedule.js";
 import "./components/est-register-btn.js";
 
 import lax from "lax.js";

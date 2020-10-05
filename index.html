@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="The HackGT 7 website!">
+        <meta name="description" content="The HackGT 7 website!" />
         <title>HackGT 7</title>
         <!-- meta -->
         <link
@@ -90,7 +90,9 @@
                         </div>
                         <div>
                             <div class="date">October 16-18, 2020</div>
-                            <div class="registration">Participant registration is now closed!</div>
+                            <div class="registration">
+                                Participant registration is now closed!
+                            </div>
                             <est-register-btn></est-register-btn>
                         </div>
                     </div>
@@ -302,6 +304,7 @@
                     <h1 style="text-align: center;">
                         Coming soon...
                     </h1>
+                    <!-- <est-schedule></est-schedule> -->
                 </div>
             </est-section>
 
@@ -358,59 +361,76 @@
             </est-section>
 
             <est-section name="sponsors" margin="7.5%">
-                    <div class="header">sponsors</div>
-                    <div class="sponsors">
-                        <div class="tier tier-1">
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/BlackRock.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img style="height: 100px;" src="assets/sponsors/NCR.png"/>
-                            </a>
-                        </div>
-                        <div class="tier tier-2">
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/Microsoft.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/NSIN.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img style="height: 85px;" src="assets/sponsors/CreateX.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img style="height: 85px;" src="assets/sponsors/IBM.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/Anthem.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/CGIU.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/GTESI.png"/>
-                            </a>
-                        </div>
-                        <div class="tier tier-3">
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/Aerospace.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/Wayfair.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img style="height: 30px;" src="assets/sponsors/Facebook.png"/>
-                            </a>
-                        </div>
-                        <div class="tier tier-4">
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/ciena.png"/>
-                            </a>
-                            <a href="" target="_blank">
-                                <img src="assets/sponsors/NYL.png"/>
-                            </a>
-                        </div>
+                <div class="header">sponsors</div>
+                <div class="sponsors">
+                    <div class="tier tier-1">
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/BlackRock.png" />
+                        </a>
+                        <a href="" target="_blank">
+                            <img
+                                style="height: 100px;"
+                                src="assets/sponsors/NCR.png"
+                            />
+                        </a>
                     </div>
+                    <div class="tier tier-2">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <a href="" target="_blank">
+                                <img src="assets/sponsors/Microsoft.png" />
+                            </a>
+                            <small style="position: relative; top: -30px;">
+                                <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Privacy Statement</a>
+                            </small>
+                        </div>
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/NSIN.png" />
+                        </a>
+                        <a href="" target="_blank">
+                            <img
+                                style="height: 85px;"
+                                src="assets/sponsors/CreateX.png"
+                            />
+                        </a>
+                        <a href="" target="_blank">
+                            <img
+                                style="height: 85px;"
+                                src="assets/sponsors/IBM.png"
+                            />
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/Anthem.png" />
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/CGIU.png" />
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/GTESI.png" />
+                        </a>
+                    </div>
+                    <div class="tier tier-3">
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/Aerospace.png" />
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/Wayfair.png" />
+                        </a>
+                        <a href="" target="_blank">
+                            <img
+                                style="height: 30px;"
+                                src="assets/sponsors/Facebook.png"
+                            />
+                        </a>
+                    </div>
+                    <div class="tier tier-4">
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/ciena.png" />
+                        </a>
+                        <a href="" target="_blank">
+                            <img src="assets/sponsors/NYL.png" />
+                        </a>
+                    </div>
+                </div>
             </est-section>
 
             <est-section id="bottle-roll" margin="0px">
@@ -578,7 +598,10 @@
                                         class=""
                                         id="mce-MMERGE7"
                                     >
-                                        <option value="">What college or university do you attend?</option>
+                                        <option value=""
+                                            >What college or university do you
+                                            attend?</option
+                                        >
                                         <option value="Georgia Tech"
                                             >Georgia Tech</option
                                         >
@@ -588,7 +611,8 @@
                                         <option value="Emory University"
                                             >Emory University</option
                                         >
-                                        <option value="Kennesaw State University"
+                                        <option
+                                            value="Kennesaw State University"
                                             >Kennesaw State University</option
                                         >
                                         <option value="University of Georgia"
@@ -603,8 +627,10 @@
                                         <option value="Clayton State University"
                                             >Clayton State University</option
                                         >
-                                        <option value="Atlanta Metropolitan College"
-                                            >Atlanta Metropolitan College</option
+                                        <option
+                                            value="Atlanta Metropolitan College"
+                                            >Atlanta Metropolitan
+                                            College</option
                                         >
                                         <option value="Clark Atlanta University"
                                             >Clark Atlanta University</option
@@ -618,16 +644,21 @@
                                         <option value="Agnes Scott College"
                                             >Agnes Scott College</option
                                         >
-                                        <option value="University of Middle Georgia"
-                                            >University of Middle Georgia</option
+                                        <option
+                                            value="University of Middle Georgia"
+                                            >University of Middle
+                                            Georgia</option
                                         >
-                                        <option value="University of North Georgia"
+                                        <option
+                                            value="University of North Georgia"
                                             >University of North Georgia</option
                                         >
-                                        <option value="University of West Georgia"
+                                        <option
+                                            value="University of West Georgia"
                                             >University of West Georgia</option
                                         >
-                                        <option value="Valdosta State University"
+                                        <option
+                                            value="Valdosta State University"
                                             >Valdosta State University</option
                                         >
                                         <option value="Mercer University"
@@ -636,8 +667,10 @@
                                         <option value="Berry College"
                                             >Berry College</option
                                         >
-                                        <option value="Fort Valley State University"
-                                            >Fort Valley State University</option
+                                        <option
+                                            value="Fort Valley State University"
+                                            >Fort Valley State
+                                            University</option
                                         >
                                         <option
                                             value="In-State, but not mentioned above"
@@ -655,7 +688,7 @@
                                     </select>
                                 </div>
                                 <div class="mc-field-group input-group">
-                                    <p>Year in College </p>
+                                    <p>Year in College</p>
                                     <ul>
                                         <li>
                                             <input
@@ -723,7 +756,9 @@
                                                 value="PhD"
                                                 name="MMERGE3"
                                                 id="mce-MMERGE3-6"
-                                            /><label for="mce-MMERGE3-6">PhD</label>
+                                            /><label for="mce-MMERGE3-6"
+                                                >PhD</label
+                                            >
                                         </li>
                                     </ul>
                                 </div>
@@ -743,10 +778,17 @@
                                         class="required"
                                         id="mce-MMERGE4"
                                     >
-                                        <option value="">How did you hear about us? *</option>
+                                        <option value=""
+                                            >How did you hear about us?
+                                            *</option
+                                        >
                                         <option value="MLH">MLH</option>
-                                        <option value="Facebook">Facebook</option>
-                                        <option value="Instagram">Instagram</option>
+                                        <option value="Facebook"
+                                            >Facebook</option
+                                        >
+                                        <option value="Instagram"
+                                            >Instagram</option
+                                        >
                                         <option value="Social Media (other)"
                                             >Social Media (other)</option
                                         >
@@ -754,7 +796,8 @@
                                         <option value="Class/Professor/TA"
                                             >Class/Professor/TA</option
                                         >
-                                        <option value="University Communications"
+                                        <option
+                                            value="University Communications"
                                             >University Communications</option
                                         >
                                         <option value="Corporate Sponsor"
@@ -774,9 +817,10 @@
                                     />
                                 </div>
                                 <div class="mc-field-group input-group">
-                                    <p
-                                        >Attended a HackGT event? If so, which one?
-                                </p>
+                                    <p>
+                                        Attended a HackGT event? If so, which
+                                        one?
+                                    </p>
                                     <ul>
                                         <li>
                                             <input
@@ -784,7 +828,8 @@
                                                 value="1"
                                                 name="group[33317][1]"
                                                 id="mce-group[33317]-33317-0"
-                                            /><label for="mce-group[33317]-33317-0"
+                                            /><label
+                                                for="mce-group[33317]-33317-0"
                                                 >HackGT - Marquee Event</label
                                             >
                                         </li>
@@ -794,7 +839,8 @@
                                                 value="2"
                                                 name="group[33317][2]"
                                                 id="mce-group[33317]-33317-1"
-                                            /><label for="mce-group[33317]-33317-1"
+                                            /><label
+                                                for="mce-group[33317]-33317-1"
                                                 >HackGTeeny</label
                                             >
                                         </li>
@@ -804,7 +850,8 @@
                                                 value="4"
                                                 name="group[33317][4]"
                                                 id="mce-group[33317]-33317-2"
-                                            /><label for="mce-group[33317]-33317-2"
+                                            /><label
+                                                for="mce-group[33317]-33317-2"
                                                 >BuildGT</label
                                             >
                                         </li>
@@ -814,7 +861,8 @@
                                                 value="8"
                                                 name="group[33317][8]"
                                                 id="mce-group[33317]-33317-3"
-                                            /><label for="mce-group[33317]-33317-3"
+                                            /><label
+                                                for="mce-group[33317]-33317-3"
                                                 >Catalyst</label
                                             >
                                         </li>
@@ -824,7 +872,8 @@
                                                 value="16"
                                                 name="group[33317][16]"
                                                 id="mce-group[33317]-33317-4"
-                                            /><label for="mce-group[33317]-33317-4"
+                                            /><label
+                                                for="mce-group[33317]-33317-4"
                                                 >Horizons</label
                                             >
                                         </li>
@@ -892,6 +941,7 @@
                         var $mcj = jQuery.noConflict(true);
                     </script>
                 </div>
+            </div>
         </div>
 
         <script src="src/index.js"></script>
