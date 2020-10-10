@@ -371,7 +371,6 @@ img {
 
 .tier {
     display: flex;
-    flex: 0 1 150px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

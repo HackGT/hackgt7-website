@@ -50,7 +50,6 @@ class EstSchedule extends HTMLElement {
    */
   _genHtml(events) {
     this.events = events;
-    console.log(this.events)
     this.events.forEach((event) => {
       const e = {
         time: event.startTime,
@@ -144,7 +143,7 @@ class EstSchedule extends HTMLElement {
    */
   _resolveStartDate(dateString) {
     const d = new Date(dateString);
-    switch (d.getDay()) {
+    switch ((d.getDay()+1)%7) {
       case 0: return 'Sunday';
       case 1: return 'Monday';
       case 2: return 'Tuesday';

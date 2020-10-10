@@ -1,10 +1,10 @@
 .est-select {
   height: 40px;
   width: 250px;
-  border: 5px solid black;
   display: flex;
   cursor: pointer;
-  background: var(--color-5);
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px 2px #eaeaea;
   color: var(--primary-color-2);
   font-weight: bold;
   border-radius: 20px;
