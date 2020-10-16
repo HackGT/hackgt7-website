@@ -51,9 +51,10 @@ class EstSchedule extends HTMLElement {
     _genHtml(events) {
         this.events = events
             .map(e => {
+                console.log(moment(e.startDate))
                 return {
                     name: e.name,
-                    startDate: moment(e.startDate).add(4, "h")
+                    startDate: moment(e.startDate).add(4,"h")
                 };
             })
             .sort((a, b) => a.startDate - b.startDate);
