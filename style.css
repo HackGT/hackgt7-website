@@ -814,6 +814,24 @@ est-footer {
     #create-x, #ibm {
         height: 55px !important;
     }
+
+    #gm {
+        height: 10px !important;
+    }
+
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tier {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tier img {
+        padding: 20px;
+    }
 }
 
 @keyframes scroll-cue {
