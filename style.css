@@ -393,7 +393,11 @@ img {
 }
 
 .tier-4 img {
-    height: 30px;
+    height: 35px;
+}
+
+.tier-5 img {
+    height: 25px;
 }
 
 .tier img {
