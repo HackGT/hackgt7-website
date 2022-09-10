@@ -10,7 +10,7 @@
   "dependencies": {
     "lax": "0.0.40",
     "lax.js": "^1.2.5",
-    "moment": "^2.29.1",
+    "moment": "^2.29.4",
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.5",
     "showdown": "^1.9.1",
