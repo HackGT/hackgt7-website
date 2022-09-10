@@ -4,13 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "doc": "yarn run jsdoc src/* -c jsdoc.config.json --readme ./README.md"
+    "doc": "yarn run jsdoc src/* -c jsdoc.config.json --readme ./README.md",
+    "build": "parcel build index.html mentor.html"
   },
   "dependencies": {
     "lax": "0.0.40",
     "lax.js": "^1.2.5",
     "moment": "^2.29.1",
     "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.5",
     "showdown": "^1.9.1",
     "smoothscroll-polyfill": "^0.4.4"
   },
